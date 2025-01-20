@@ -1,0 +1,12 @@
+
+  .custom-button {
+    background: linear-gradient(to bottom, #007bff, #6cb2ff);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 10px;
+    align-items: start;
+    width: 63px;
+  }
+  .custom-button img {
+    border-radius: 50%;
+  }
