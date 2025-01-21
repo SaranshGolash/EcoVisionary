@@ -1,9 +1,19 @@
 #navBar {
-  background-image: linear-gradient(to right, #1fde7d, #147e3f);
+  background-color: whitesmoke;
 }
 
 #navBarList {
-  color: antiquewhite;
+  font-weight: 500;
+  color: rgb(43, 42, 42);
+}
+.nav-link:hover{
+  color: #007bff !important;
+}
+.nav-link:active{
+  color: #007bff;
+}
+.footer-container{
+  background-color: whitesmoke;
 }
   .custom-button {
     background: linear-gradient(to bottom, #007bff, #6cb2ff);
