@@ -1,4 +1,10 @@
+#navBar {
+  background-image: linear-gradient(to right, #1fde7d, #147e3f);
+}
 
+#navBarList {
+  color: antiquewhite;
+}
   .custom-button {
     background: linear-gradient(to bottom, #007bff, #6cb2ff);
     border: none;
