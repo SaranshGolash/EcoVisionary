@@ -1,5 +1,5 @@
-#navBar {
-  background-color: whitesmoke;
+body {
+  background-image: linear-gradient(to left, #C2FFC7, #9EDF9C);
 }
 
 #navBarList {
@@ -12,8 +12,21 @@
 .nav-link:active{
   color: #007bff;
 }
+
+#login {
+  background-color: #218a1fb3;
+  color: aliceblue;
+  font-weight: 700;
+}
+
+.btn-signUp {
+  background-color: #16c076;
+  color: aliceblue;
+  font-weight: 700;
+}
+
 .footer-container{
-  background-color: whitesmoke;
+  background-image: linear-gradient(-30deg, #C2FFC7, #9EDF9C);
 }
   .custom-button {
     background: linear-gradient(to bottom, #007bff, #6cb2ff);

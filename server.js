@@ -8,12 +8,16 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use('/Public', express.static(path.join(__dirname, 'Public')));
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
     res.render("index.ejs");
 });
 
-app.get("/login", (req, res) => {
+app.get("/login", async (req, res) => {
     res.render("login.ejs");
+});
+
+app.get("/support", async (req, res) => {
+    res.render("support.ejs");
 });
 
 app.listen(port, () => {

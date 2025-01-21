@@ -43,20 +43,26 @@
         <li><a href="#" class="nav-link px-2" id="navBarList">Products</a></li>
         <li><a href="#" class="nav-link px-2" id="navBarList">Services</a></li>
         <li>
-          <a href="#" class="nav-link px-2" id="navBarList">Support Center</a>
+          <a href="#" class="nav-link px-2" id="navBarList" type="support" onclick="window.location.href='/support'">Support Center</a>
         </li>
       </ul>
 
       <div class="col-md-3 text-end">
         <button
           type="login"
-          class="btn btn-outline-primary me-2"
+          class="btn btn-login me-2"
           id="login"
           onclick="window.location.href='/login'"
         >
           Login
         </button>
-        <button type="sign-up" class="btn btn-primary me-5">Sign-up</button>
+        <button 
+          type="sign-up" 
+          class="btn btn-signUp me-5" 
+          id="signUp"
+        >
+          Sign-up
+        </button>
       </div>
     </header>
 
@@ -161,7 +167,7 @@
 
     <!-- FEATURES -->
     <div class="container px-4 py-5" id="hanging-icons">
-      <h2 class="pb-2 border-bottom">Features</h2>
+      <h2 class="pb-2 border-bottom border-success">Features</h2>
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="col d-flex align-items-start">
           <div
@@ -271,7 +277,7 @@
 
     <!-- SERVICES -->
     <div class="container px-4 py-5">
-      <h2 class="pb-2 border-bottom">Services Offered by Us</h2>
+      <h2 class="pb-2 border-bottom border-success">Services Offered by Us</h2>
 
       <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
         <div class="col d-flex flex-column align-items-start gap-2">
@@ -355,9 +361,9 @@
 
     <!-- TESTIMONIALS -->
     <div class="d-flex align-items-center justify-content-center">
-      <h2 class="mb-4 me-6">User Review</h2>
+      <h2 class="mb-4 me-5">User Review</h2>
     </div>
-    <h2 class="me-5 ms-5 border-bottom"></h2>
+    <h2 class="me-5 ms-5 mb-4 border-bottom border-success"></h2>
     <div class="d-flex w-90 me-0 ms-5 mb-3">
       <div class="col-lg-3 me-5 ms-5 text-center">
         <img
@@ -404,15 +410,15 @@
         </p>
       </div>
     </div>
-    <div class="d-grid gap-2 d-md-flex justify-content-md-center mb-5">
-      <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center mb-5 me-3">
+      <button type="button" class="btn btn-primary btn-lg px-4 me-5">
         See More
       </button>
     </div>
 
     <!-- FOOTER -->
     <div class="footer-container">
-      <div class="border-top"></div>
+      <div class="border-top border-success"></div>
       <h2 class="ms-5 py-3">EcoVisionary</h2>
       <div class="container">
         <footer class="py-5">
@@ -491,7 +497,7 @@
           </div>
 
           <div
-            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-success"
           >
             <p>© 2024 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
