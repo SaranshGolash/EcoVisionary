@@ -63,6 +63,10 @@ body {
     width: 220px;
 }
 
+#movement-line {
+    width: 270px;
+}
+
 /* Footer styling */
 
 .footer-container{
