@@ -37,6 +37,16 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Adjustment in underlines created via divs to highlight the headings */
+
 .py-2 {
     width: 385px;
+}
+
+#story-line {
+    width: 130px;
+}
+
+#offer-line {
+    width: 200px;
 }
