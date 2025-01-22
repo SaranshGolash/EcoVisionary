@@ -1,94 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EcoVisionary</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="/Public/support.css">
-    </head>
-    <body>
-        <section class="support-section">
-            <div class="support-div">
-                <h1>Support Center <img src="/Public/Images/support.png" alt="help" id="support"></h1>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top border-success"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoVisionary</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Public/support.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-5"
+      id="navBar"
+    >
+      <div class="col-md-3 mb-2 mb-md-0 ms-5">
+        <a
+          href="/"
+          class="d-inline-flex link-body-emphasis text-decoration-none"
+        >
+          <img
+            src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png"
+            alt=""
+            width="100"
+            height="auto"
+          />
+        </a>
+      </div>
 
-                <!-- How Can We Help You? -->
+      <ul
+        class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 gap-3"
+      >
+        <li>
+          <a href="#" class="nav-link px-2 active" id="navBarList" onclick="window.location.href='/'">Home</a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            type="about"
+            onclick="window.location.href='/about'"
+            >About Us</a
+          >
+        </li>
 
-                <h2>How Can We Help You?</h2>
-                <p>Welcome to the Support Center! Whether you’re a buyer, seller, or manufacturer, we’re here to assist you every step of the way. Explore the resources below to find answers, troubleshoot issues, and get the most out of our platform.</p>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top border-success"></div>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            type="products"
+            onclick="window.location.href='/products'"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            type="services"
+            onclick="window.location.href='/services'"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            type="support"
+            onclick="window.location.href='/support'"
+            >Support Center</a
+          >
+        </li>
+      </ul>
 
-                <!-- Frequently Asked Questions -->
+      <div class="col-md-3 text-end">
+        <button
+          type="login"
+          class="btn btn-login me-2"
+          id="login"
+          onclick="window.location.href='/login'"
+        >
+          Login
+        </button>
+        <button
+          type="sign-up"
+          class="btn btn-signUp me-5"
+          id="signUp"
+          onclick="window.location.href='/signUp'"
+        >
+          Sign-up
+        </button>
+      </div>
+    </header>
 
-                <h2>Frequently Asked Questions</h2>
-                <h4>Q: How do I create an account?</h4>
-                <p>A: Click on the “Sign Up” button at the top of the homepage, provide the required information, and start your journey with us.</p>
-                <h4>Q: What payment methods are accepted?</h4>
-                <p>A: We accept all major credit/debit cards, PayPal, and other secure payment gateways.</p>
-                <h4>Q: Can I cancel or return an order?</h4>
-                <p>A: Yes, orders can be canceled or returned based on our return policy. Visit "Your Profile>Orders>Return Order" for more details.</p>
-                <h4>Q: How do I contact a seller or buyer?</h4>
-                <p>A: Use the in-app messaging feature to communicate securely with other users.</p>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top border-success"></div>
+    <section class="support-section">
+      <div class="support-div">
+        <h1>
+          Support Center
+          <img src="/Public/Images/support.png" alt="help" id="support" />
+        </h1>
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top border-success"
+        ></div>
 
-                <!-- Need to know more -->
+        <!-- How Can We Help You? -->
 
-                <h2>Need More Help?</h2>
-                <p>If you couldn’t find the answer you were looking for, don’t hesitate to reach out. Our dedicated support team is here to assist you.</p>
-                <h4>Contact Us</h4>
-                <ul>
-                    <li><strong>Email:</strong> support@yourwebsite.com</li>
-                    <li><strong>Phone:</strong> +1 (800) 123-4567</li>
-                    <li><strong>Live Chat:</strong> Available 24/7 on our website</li>
+        <h2>How Can We Help You?</h2>
+        <p>
+          Welcome to the Support Center! Whether you’re a buyer, seller, or
+          manufacturer, we’re here to assist you every step of the way. Explore
+          the resources below to find answers, troubleshoot issues, and get the
+          most out of our platform.
+        </p>
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top border-success"
+        ></div>
+
+        <!-- Frequently Asked Questions -->
+
+        <h2>Frequently Asked Questions</h2>
+        <h4>Q: How do I create an account?</h4>
+        <p>
+          A: Click on the “Sign Up” button at the top of the homepage, provide
+          the required information, and start your journey with us.
+        </p>
+        <h4>Q: What payment methods are accepted?</h4>
+        <p>
+          A: We accept all major credit/debit cards, PayPal, and other secure
+          payment gateways.
+        </p>
+        <h4>Q: Can I cancel or return an order?</h4>
+        <p>
+          A: Yes, orders can be canceled or returned based on our return policy.
+          Visit "Your Profile>Orders>Return Order" for more details.
+        </p>
+        <h4>Q: How do I contact a seller or buyer?</h4>
+        <p>
+          A: Use the in-app messaging feature to communicate securely with other
+          users.
+        </p>
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top border-success"
+        ></div>
+
+        <!-- Need to know more -->
+
+        <h2>Need More Help?</h2>
+        <p>
+          If you couldn’t find the answer you were looking for, don’t hesitate
+          to reach out. Our dedicated support team is here to assist you.
+        </p>
+        <h4>Contact Us</h4>
+        <ul>
+          <li><strong>Email:</strong> support@yourwebsite.com</li>
+          <li><strong>Phone:</strong> +1 (800) 123-4567</li>
+          <li><strong>Live Chat:</strong> Available 24/7 on our website</li>
+        </ul>
+        <h4>Follow Us</h4>
+        <p>Stay updated on the latest features, tips, and community stories:</p>
+        <ul>
+          <li>
+            Instagram
+            <img
+              src="/Public/Images/insta icon.png"
+              alt="instagram icon"
+              class="img"
+            />| X
+            <img src="/Public/Images/x icon.png" alt="X icon" class="img" />|
+            Facebook
+            <img
+              src="/Public/Images/fb icon.png"
+              alt="facebook icon"
+              class="img"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+       <!-- FOOTER -->
+       <div class="footer-container">
+        <div class="col-md-1 mt-2 mb-md-0 ms-5">
+          <a href="/">
+            <img
+              src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png"
+              alt=""
+              class="logo"
+              width="120"
+              height="auto"
+            />
+          </a>
+        </div>
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5>COMPANY</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Features</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Reviews</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">About Us</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Services</a>
+                  </li>
                 </ul>
-                <h4>Follow Us</h4>
-                <p>Stay updated on the latest features, tips, and community stories:</p>
-                <ul>
-                    <li>Instagram <img src="/Public/Images/insta icon.png" alt="instagram icon" class="img">|
-                        X <img src="/Public/Images/x icon.png" alt="X icon" class="img">|
-                        Facebook <img src="/Public/Images/fb icon.png" alt="facebook icon" class="img"></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <div class="footer-container">
-            <div class="border-top border-success"></div>
-                <h2 class="ms-5 py-3">EcoVisionary</h2>
-                <div class="container">
-                    <footer class="py-5">
-                    <div class="row">
-                        <div class="col-6 col-md-2 mb-3">
-                            <h5>COMPANY</h5>
-                            <ul class="nav flex-column">
-                                <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary"
-                                    >Features</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary">Reviews</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary">About Us</a>
-                                </li>
-                                <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary">Services</a>
-                                </li>
-                            </ul>
-                        </div>
+              </div>
   
               <div class="col-6 col-md-2 mb-3">
                 <h5>SHOP</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-body-secondary">Products</a>
+                    <a href="#" class="nav-link p-0">Products</a>
                   </li>
                 </ul>
               </div>
@@ -97,17 +235,13 @@
                 <h5>HELP</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-body-secondary">Support Center</a>
+                    <a href="#" class="nav-link p-0">Support Center</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-body-secondary"
-                      >Teams & Conditions</a
-                    >
+                    <a href="#" class="nav-link p-0">Teams & Conditions</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-body-secondary"
-                      >Blogs</a
-                    >
+                    <a href="#" class="nav-link p-0">Blogs</a>
                   </li>
                 </ul>
               </div>
@@ -140,19 +274,38 @@
               <p>© 2024 Company, Inc. All rights reserved.</p>
               <ul class="list-unstyled d-flex">
                 <li class="ms-3">
-  
+                  <a class="link-body-emphasis" href="#"
+                    ><img
+                      src="../Public/Images/fb icon.png"
+                      alt=""
+                      width="24"
+                      height="24"
+                  /></a>
                 </li>
                 <li class="ms-3">
-  
+                  <a class="link-body-emphasis" href="#"
+                    ><img
+                      src="../Public/Images/insta icon.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                  /></a>
                 </li>
                 <li class="ms-3">
-                  
+                  <a class="link-body-emphasis" href="#"
+                    ><img
+                      src="../Public/Images/x icon.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                  /></a>
                 </li>
               </ul>
             </div>
           </footer>
         </div>
       </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

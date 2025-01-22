@@ -1,167 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EcoVisionary</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="/Public/about.css">
-    </head>
-    <body>
-        <section class="about-container">
-            <div class="about-body">
-                <!-- About Us -->
-                <h1>About Us</h1>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top border-success"></div>
-                <!-- Starting punch tagline -->
-                <h2>Turning Waste into Wonders</h2>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success"></div>
-                <p>Welcome to our platform, a one-of-a-kind marketplace dedicated to transforming waste into valuable, artistic creations. We believe in the power of upcycling to reduce environmental impact, support creativity, and build a sustainable future. Our mission is simple yet profound: to redefine waste as a resource and connect eco-conscious insectioniduals with exceptional art.
-                </p>
-                <br>
-                <!-- Our Story -->
-                <h2>Our Story</h2>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success" id="story-line"></div>
-                <p>Our journey began with a shared passion for sustainability and creativity. Every year, households and industries generate vast amounts of waste, much of which ends up in landfills, harming the environment. We saw an opportunity to not only reduce waste but also empower artists and innovators to turn these discarded materials into beautiful and functional products.
-                Thus, our platform was born—a place where waste finds new life, and people find inspiration.</p>
-                <br>
-                <!-- What We Offer -->
-                <h2>What We Offer</h2>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success" id="offer-line"></div>
-                <ol>
-                    <li><strong>Eco-Friendly Marketplace:</strong> A vibrant hub for buying, selling, and manufacturing art crafted from recycled materials.</li>
-                    <br>
-                    <li><strong>Community of Creators:</strong> A supportive space for artisans, designers, and manufacturers to showcase their creativity and earn a living sustainably.</li>
-                    <br>
-                    <li><strong>Sustainability Impact:</strong> We track and measure how every product sold contributes to reducing waste and conserving natural resources.</li>
-                </ol>
-                <br>
-                <h2>Our Mission</h2>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success" id="mission-line"></div>
-                <p>To create a world where waste is no longer a problem but a solution. By connecting people to sustainable art and practices, we aim to foster a culture of eco-conscious living and creativity.</p>
-                <br>
-                <h2>Our Vision</h2>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success" id="vision-line"></div>
-                <p>To become the leading global platform for upcycled art, inspiring millions to make sustainable choices and reduce their carbon footprint.</p>
-                <br>
-                <h2>Why Choose Us?</h2>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success" id="choose-line"></div>
-                <ol>
-                    <li><strong>Unique Products:</strong> Explore a diverse range of one-of-a-kind creations made from household and industrial waste.</li>
-                    <br>
-                    <li><strong>Support for Sustainability:</strong> Every purchase supports eco-friendly practices and a cleaner planet.</li>
-                    <br>
-                    <li><strong>Empowering Artists:</strong> We give artisans a platform to showcase their skills and grow their businesses.</li>
-                </ol>
-                <br>
-                <h2>Join Our Movement</h2>
-                <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success" id="movement-line"></div>
-                <p>By being part of our community, you’re not just buying or selling art—you’re contributing to a larger mission of sustainability and creativity. Together, we can make a difference, one upcycled product at a time.</p>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoVisionary</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Public/about.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-5"
+      id="navBar"
+    >
+      <div class="col-md-3 mb-2 mb-md-0 ms-5">
+        <a
+          href="/"
+          class="d-inline-flex link-body-emphasis text-decoration-none"
+        >
+          <img
+            src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png"
+            alt=""
+            width="100"
+            height="auto"
+          />
+        </a>
+      </div>
+
+      <ul
+        class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 gap-3"
+      >
+        <li>
+          <a href="#" class="nav-link px-2 active" id="navBarList" onclick="window.location.href='/'">Home</a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            type="about"
+            onclick="window.location.href='/about'"
+            >About Us</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            type="products"
+            onclick="window.location.href='/products'"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            type="services"
+            onclick="window.location.href='/services'"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            type="support"
+            onclick="window.location.href='/support'"
+            >Support Center</a
+          >
+        </li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button
+          type="login"
+          class="btn btn-login me-2"
+          id="login"
+          onclick="window.location.href='/login'"
+        >
+          Login
+        </button>
+        <button
+          type="sign-up"
+          class="btn btn-signUp me-5"
+          id="signUp"
+          onclick="window.location.href='/signUp'"
+        >
+          Sign-up
+        </button>
+      </div>
+    </header>
+
+    <!-- ABOUT BODY -->
+    <section class="about-container ms-5 me-5 mb-5">
+      <div class="about-body">
+        <!-- Starting punch tagline -->
+        <h2 class="align-items-center me-5 ms-5 mb-4 pb-4 border-bottom border-success border-1">Turning Waste into Wonders</h2>
+        <!-- <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success"
+        ></div> -->
+        <p>
+          Welcome to our platform, a one-of-a-kind marketplace dedicated to
+          transforming waste into valuable, artistic creations. We believe in
+          the power of upcycling to reduce environmental impact, support
+          creativity, and build a sustainable future. Our mission is simple yet
+          profound: to redefine waste as a resource and connect eco-conscious
+          insectioniduals with exceptional art.
+        </p>
+        <br />
+        <!-- Our Story -->
+        <h2 class="align-items-center me-5 ms-5 mb-4 pb-4 border-bottom border-success border-1">Our Story</h2>
+        <!-- <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success"
+          id="story-line"
+        ></div> -->
+        <p>
+          Our journey began with a shared passion for sustainability and
+          creativity. Every year, households and industries generate vast
+          amounts of waste, much of which ends up in landfills, harming the
+          environment. We saw an opportunity to not only reduce waste but also
+          empower artists and innovators to turn these discarded materials into
+          beautiful and functional products. Thus, our platform was born—a place
+          where waste finds new life, and people find inspiration.
+        </p>
+        <br />
+        <!-- What We Offer -->
+        <h2 class="align-items-center me-5 ms-5 mb-4 pb-4 border-bottom border-success border-1">What We Offer</h2>
+        <!-- <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success"
+          id="offer-line"
+        ></div> -->
+        <ol class="ms-4">
+          <li>
+            <strong>Eco-Friendly Marketplace:</strong> A vibrant hub for buying,
+            selling, and manufacturing art crafted from recycled materials.
+          </li>
+          <br />
+          <li>
+            <strong>Community of Creators:</strong> A supportive space for
+            artisans, designers, and manufacturers to showcase their creativity
+            and earn a living sustainably.
+          </li>
+          <br />
+          <li>
+            <strong>Sustainability Impact:</strong> We track and measure how
+            every product sold contributes to reducing waste and conserving
+            natural resources.
+          </li>
+        </ol>
+        <br />
+        <h2 class="align-items-center me-5 ms-5 mb-4 pb-4 border-bottom border-success border-1">Our Mission</h2>
+        <!-- <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success"
+          id="mission-line"
+        ></div> -->
+        <p>
+          To create a world where waste is no longer a problem but a solution.
+          By connecting people to sustainable art and practices, we aim to
+          foster a culture of eco-conscious living and creativity.
+        </p>
+        <br />
+        <h2 class="align-items-center me-5 ms-5 mb-4 pb-4 border-bottom border-success border-1">Our Vision</h2>
+        <!-- <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success"
+          id="vision-line"
+        ></div> -->
+        <p>
+          To become the leading global platform for upcycled art, inspiring
+          millions to make sustainable choices and reduce their carbon
+          footprint.
+        </p>
+        <br />
+        <h2 class="align-items-center me-5 ms-5 mb-4 pb-4 border-bottom border-success border-1">Why Choose Us?</h2>
+        <!-- <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success"
+          id="choose-line"
+        ></div> -->
+        <ol class="ms-4">
+          <li>
+            <strong>Unique Products:</strong> Explore a diverse range of
+            one-of-a-kind creations made from household and industrial waste.
+          </li>
+          <br />
+          <li>
+            <strong>Support for Sustainability:</strong> Every purchase supports
+            eco-friendly practices and a cleaner planet.
+          </li>
+          <br />
+          <li>
+            <strong>Empowering Artists:</strong> We give artisans a platform to
+            showcase their skills and grow their businesses.
+          </li>
+        </ol>
+        <br />
+        <h2 class="align-items-center me-5 ms-5 mb-4 pb-4 border-bottom border-success border-1">Join Our Movement</h2>
+        <!-- <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top border-success"
+          id="movement-line"
+        ></div> -->
+        <p>
+          By being part of our community, you’re not just buying or selling
+          art—you’re contributing to a larger mission of sustainability and
+          creativity. Together, we can make a difference, one upcycled product
+          at a time.
+        </p>
+      </div>
     </section>
     <br>
-                    <!-- FOOTER -->
-                    <div class="footer-container">
-                        <div class="border-top border-success"></div>
-                        <h2 class="ms-5 py-3">EcoVisionary</h2>
-                        <div class="container">
-                          <footer class="py-5">
-                            <div class="row">
-                              <div class="col-6 col-md-2 mb-3">
-                                <h5>COMPANY</h5>
-                                <ul class="nav flex-column">
-                                  <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-                                  </li>
-                                  <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary"
-                                      >Features</a
-                                    >
-                                  </li>
-                                  <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary">Reviews</a>
-                                  </li>
-                                  <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary">About Us</a>
-                                  </li>
-                                  <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary">Services</a>
-                                  </li>
-                                </ul>
-                              </div>
-                  
-                              <div class="col-6 col-md-2 mb-3">
-                                <h5>SHOP</h5>
-                                <ul class="nav flex-column">
-                                  <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary">Products</a>
-                                  </li>
-                                </ul>
-                              </div>
-                  
-                              <div class="col-6 col-md-2 mb-3">
-                                <h5>HELP</h5>
-                                <ul class="nav flex-column">
-                                  <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary">Support Center</a>
-                                  </li>
-                                  <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary"
-                                      >Teams & Conditions</a
-                                    >
-                                  </li>
-                                  <li class="nav-item mb-2">
-                                    <a href="#" class="nav-link p-0 text-body-secondary"
-                                      >Blogs</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                  
-                              <div class="col-md-5 offset-md-1 mb-3">
-                                <form>
-                                  <h5>Subscribe to our newsletter</h5>
-                                  <p>Monthly digest of what's new and exciting from us.</p>
-                                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                    <label for="newsletter1" class="visually-hidden"
-                                      >Email address</label
-                                    >
-                                    <input
-                                      id="newsletter1"
-                                      type="text"
-                                      class="form-control"
-                                      placeholder="Email address"
-                                    />
-                                    <button class="btn btn-primary" type="button">
-                                      Subscribe
-                                    </button>
-                                  </div>
-                                </form>
-                              </div>
-                            </div>
-                  
-                            <div
-                              class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-success"
-                            >
-                              <p>© 2024 Company, Inc. All rights reserved.</p>
-                              <ul class="list-unstyled d-flex">
-                                <li class="ms-3">
-                  
-                                </li>
-                                <li class="ms-3">
-                  
-                                </li>
-                                <li class="ms-3">
-                                  
-                                </li>
-                              </ul>
-                            </div>
-                          </footer>
-                        </div>
-                      </div>
+
+   <!-- FOOTER -->
+   <div class="footer-container">
+    <div class="col-md-1 mt-2 mb-md-0 ms-5">
+      <a href="/">
+        <img
+          src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png"
+          alt=""
+          class="logo"
+          width="120"
+          height="auto"
+        />
+      </a>
+    </div>
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>COMPANY</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Reviews</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">About Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Services</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>SHOP</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Products</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>HELP</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Support Center</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Teams & Conditions</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Blogs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+                <button class="btn btn-primary" type="button">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-success"
+        >
+          <p>© 2024 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><img
+                  src="../Public/Images/fb icon.png"
+                  alt=""
+                  width="24"
+                  height="24"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><img
+                  src="../Public/Images/insta icon.png"
+                  alt=""
+                  width="30"
+                  height="30"
+              /></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><img
+                  src="../Public/Images/x icon.png"
+                  alt=""
+                  width="30"
+                  height="30"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+  </body>
 </html>

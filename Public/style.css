@@ -1,47 +1,80 @@
-body {
-  background-image: linear-gradient(to left, #C2FFC7, #9EDF9C);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  background-color: #E9ECEF;
+  font-family: "Noto Sans", serif;
 }
 
 /* Nav-Bar styling */
-
+header{
+  background-image: linear-gradient(to left, #C2FFC7, #55cb51);
+}
 #navBarList {
   font-weight: 500;
   color: rgb(43, 42, 42);
 }
 .nav-link:hover{
-  color: #007bff !important;
+  color: #fff !important;
 }
-.nav-link:active{
-  color: #007bff;
+.nav-link li>a:active{
+  color: #fff;
 }
+
+/* Button style */
+.btn-primary{
+  background-color: #24b164;
+}
+.btn-primary:hover {
+  background-color: #16742e;
+}
+
+.carousel-caption h2 {
+  color: white; /* Text color */
+  margin-bottom: 20px;
+}
+
 
 /* Login button styling */
 
 #login {
-  background-color: #218a1fb3;
+  background-color: #16742e;
   color: aliceblue;
   font-weight: 700;
+}
+#login:hover {
+  background-color: #24b164;
 }
 
 /* Sign Up button styling */
 
 .btn-signUp {
-  background-color: #16c076;
+  background-color: #24b164;
   color: aliceblue;
   font-weight: 700;
 }
-
+.btn-signUp:hover {
+  background-color: #16742e;
+  color: aliceblue;
+}
 /* Styling the images of the carousel */
 
 .carousel-item > img {
   height: 700px;
-  padding: 0px 5px 0px 5px;
 }
 
 /* Footer styling */
 
 .footer-container{
-  background-image: linear-gradient(-30deg, #C2FFC7, #9EDF9C);
+  background-image: linear-gradient(to left, #c4ffca, #59ed54);
+  /* background-color: #282A35; */
+  color: rgb(35, 35, 35);
+}
+.footer-container li>a{
+  color: rgb(55, 55, 55);
+}
+.footer-container a>.logo {
+  margin-top: 25px;
+  margin-left: 42px;
 }
 
 /* Services section styling */
