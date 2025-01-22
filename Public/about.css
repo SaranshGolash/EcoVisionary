@@ -50,3 +50,21 @@ body {
 #offer-line {
     width: 200px;
 }
+
+#mission-line {
+    width: 165px;
+}
+
+#vision-line {
+    width: 145px;
+}
+
+#choose-line {
+    width: 220px;
+}
+
+/* Footer styling */
+
+.footer-container{
+    background-image: linear-gradient(-30deg, #C2FFC7, #9EDF9C);
+  }

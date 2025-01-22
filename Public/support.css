@@ -44,3 +44,9 @@ body {
     width: 25px;
     height: 20px;
 }
+
+/* Footer styling */
+
+.footer-container{
+    background-image: linear-gradient(-30deg, #C2FFC7, #9EDF9C);
+  }
