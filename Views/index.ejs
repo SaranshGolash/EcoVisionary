@@ -39,9 +39,9 @@
         <li>
           <a href="#" class="nav-link px-2 active" id="navBarList">Home</a>
         </li>
-        <li><a href="#" class="nav-link px-2" id="navBarList">About Us</a></li>
+        <li><a href="#" class="nav-link px-2" id="navBarList" type="about" onclick="window.location.href='/about'">About Us</a></li>
         <li><a href="#" class="nav-link px-2" id="navBarList">Products</a></li>
-        <li><a href="#" class="nav-link px-2" id="navBarList">Services</a></li>
+        <li><a href="#" class="nav-link px-2" id="navBarList" type="services">Services</a></li>
         <li>
           <a href="#" class="nav-link px-2" id="navBarList" type="support" onclick="window.location.href='/support'">Support Center</a>
         </li>
@@ -60,6 +60,7 @@
           type="sign-up" 
           class="btn btn-signUp me-5" 
           id="signUp"
+          onclick="window.location.href='/signUp'"
         >
           Sign-up
         </button>
