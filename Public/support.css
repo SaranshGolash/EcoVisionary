@@ -59,20 +59,21 @@ header{
 }
 
 #support {
-    width: 100px;
-    height: 70px;
+    width: 90px;
+    height: 80px;
     border-radius: 40px;
 }
 
 /* styling for the body of the support webpage */
 .support-div {
-    width: 650px;
+    width: 1000px;
 }
 
 .support-div > h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 800;
 }
 
 .support-div > h2 {
