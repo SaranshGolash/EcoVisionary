@@ -20,20 +20,6 @@ header{
   color: #fff;
 }
 
-/* Button style */
-.btn-primary{
-  background-color: #24b164;
-}
-.btn-primary:hover {
-  background-color: #16742e;
-}
-
-.carousel-caption h2 {
-  color: white; /* Text color */
-  margin-bottom: 20px;
-}
-
-
 /* Login button styling */
 
 #login {
@@ -56,25 +42,24 @@ header{
   background-color: #16742e;
   color: aliceblue;
 }
+
+/* Button style */
+.btn-primary{
+  background-color: #24b164;
+}
+.btn-primary:hover {
+  background-color: #16742e;
+}
+
+.carousel-caption h2 {
+  color: white; /* Text color */
+  margin-bottom: 20px;
+}
+
 /* Styling the images of the carousel */
 
 .carousel-item > img {
   height: 700px;
-}
-
-/* Footer styling */
-
-.footer-container{
-  background-image: linear-gradient(to left, #c4ffca, #59ed54);
-  /* background-color: #282A35; */
-  color: rgb(35, 35, 35);
-}
-.footer-container li>a{
-  color: rgb(55, 55, 55);
-}
-.footer-container a>.logo {
-  margin-top: 25px;
-  margin-left: 42px;
 }
 
 /* Services section styling */
@@ -90,4 +75,19 @@ header{
 
 .custom-button img {
     border-radius: 50%;
+}
+
+/* Footer styling */
+
+.footer-container{
+  background-image: linear-gradient(to left, #c4ffca, #59ed54);
+  /* background-color: #282A35; */
+  color: rgb(35, 35, 35);
+}
+.footer-container li>a{
+  color: rgb(55, 55, 55);
+}
+.footer-container a>.logo {
+  margin-top: 25px;
+  margin-left: 42px;
 }

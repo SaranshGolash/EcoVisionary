@@ -32,6 +32,12 @@ app.get("/about", async(req, res) => {
     res.render("about.ejs");
 });
 
+// Products Page Route
+
+app.get("/products", async(req, res) => {
+    res.render("products.ejs");
+})
+
 // Support Page Route
 
 app.get("/support", async (req, res) => {
