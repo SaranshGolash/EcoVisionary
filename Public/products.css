@@ -116,6 +116,15 @@ header{
     border-radius: 17px 17px 0px 0px;
 }
 
+.bg-body-tertiary {
+    transition: transform 0.3s ease;
+}
+
+.bg-body-tertiary:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
 .bg-dark > img {
     width: 100%;
     height: 300px;
@@ -130,7 +139,7 @@ header{
 
 .my-3 > h2 {
     font-family: devanagari;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .my-3 > p {
@@ -153,22 +162,30 @@ header{
     color: #E9ECEF;
 }
 
+#product-div1 > .my-3 > h4 {
+    color: #E9ECEF;
+}
+
+#product-div2 > .my-3 > h4 {
+    color: #E9ECEF;
+}
+
 .my-3 > h4 {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 /* Button stylings*/
 
 .buyNow {
     background-image: linear-gradient(to left, #ecffc4, #bced54);
-    border-radius: 20px;
-    padding: 5px 10px 5px 10px;
+    border-radius: 55px;
+    padding: 10px 15px 10px 15px;
 }
 
 .addToCart {
     background-image: linear-gradient(to left, #ecffc4, #bced54);
-    border-radius: 20px;
-    padding: 5px 5px;
+    border-radius: 55px;
+    padding: 10px 10px;
 }
 
   /* Footer styling */
