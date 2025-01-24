@@ -42,10 +42,6 @@ header{
     background-color: #16742e;
     color: aliceblue;
   }
-
-.container {
-    max-width: 960px;
-  }
   
   .icon-link > .bi {
     width: .75em;
@@ -190,7 +186,7 @@ header{
 
   /* Footer styling */
 
-.footer-container{
+  .footer-container{
     background-image: linear-gradient(to left, #c4ffca, #59ed54);
     /* background-color: #282A35; */
     color: rgb(35, 35, 35);

@@ -243,9 +243,22 @@
           </div>
         </div>
       </main>
-      
+
+      <nav aria-label="Page navigation example" class="my-5 mb-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#" onclick="window.location.href='/products'">1</a></li>
+          <li class="page-item"><a class="page-link" href="#" onclick="window.location.href='/product-1'">2</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" onclick="window.location.href='/product-1'">Next</a>
+          </li>
+        </ul>
+      </nav>
+
           <!-- FOOTER -->
-    <div class="footer-container">
+       <div class="footer-container">
         <div class="col-md-1 mt-2 mb-md-0 ms-5">
           <a href="/">
             <img
@@ -264,19 +277,19 @@
                 <h5>COMPANY</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0" onclick="window.location.href='/home'">Home</a>
+                    <a href="#" class="nav-link p-0">Home</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0" onclick="window.location.href='/about'">About Us</a>
+                    <a href="#" class="nav-link p-0">Features</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0" onclick="window.location.href='/services'">Services</a>
+                    <a href="#" class="nav-link p-0">Reviews</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0" onclick="window.location.href='/reviews'">Reviews</a>
+                    <a href="#" class="nav-link p-0">About Us</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0" onclick="window.location.href='/support'">Support Center</a>
+                    <a href="#" class="nav-link p-0">Services</a>
                   </li>
                 </ul>
               </div>
@@ -285,7 +298,7 @@
                 <h5>SHOP</h5>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0" onclick="window.location.href='/products'">Products</a>
+                    <a href="#" class="nav-link p-0">Products</a>
                   </li>
                 </ul>
               </div>
@@ -364,6 +377,7 @@
           </footer>
         </div>
       </div>
+
       <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
     </body>

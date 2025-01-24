@@ -44,6 +44,12 @@ app.get("/support", async (req, res) => {
     res.render("support.ejs");
 });
 
+// Services Page Route
+
+app.get("/services", async (req, res) => {
+    res.render("services.ejs");
+});
+
 // Home Page Route
 
 app.get("/home", async (req, res) => {
