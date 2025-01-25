@@ -5,6 +5,29 @@ body{
     font-family: "Noto Sans", serif;
 }
 
+/* Theme Toggle */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode .nav-link {
+  color: #ffffff;
+}
+header {
+  background-image: linear-gradient(to left, #C2FFC7, #55cb51);
+}
+body.dark-mode header {
+  background-image: linear-gradient(to left, #7cf687, #41bc3d); /* Dark mode gradient */
+}
+.nav-link {
+  color: #000000;
+}
+#darkModeToggle{
+  border: 2px solid;
+  border-radius: 50px;
+}
+
 /* NavBar */
 header{
     background-image: linear-gradient(to left, #c4ffca, #59ed54);

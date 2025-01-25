@@ -5,6 +5,29 @@ body{
   font-family: "Noto Sans", serif;
 }
 
+/* Theme Toggle */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode .nav-link {
+  color: #ffffff;
+}
+header {
+  background-image: linear-gradient(to left, #C2FFC7, #55cb51);
+}
+body.dark-mode header {
+  background-image: linear-gradient(to left, #7cf687, #41bc3d); /* Dark mode gradient */
+}
+.nav-link {
+  color: #000000;
+}
+#darkModeToggle{
+  border: 2px solid;
+  border-radius: 50px;
+}
+
 /* Nav-Bar styling */
 header{
   background-image: linear-gradient(to left, #C2FFC7, #55cb51);
@@ -56,6 +79,8 @@ header{
   margin-bottom: 20px;
 }
 
+/* Carousel Heading style */
+
 .car-text {
   font-size: 70px;
   text-align: right;
@@ -64,7 +89,7 @@ header{
 }
 .car-text1 {
   font-size: 25px;
-  margin-bottom: 25%;
+  margin-bottom: 20%;
   text-align: right;
   font-weight: 600;
 }
@@ -76,7 +101,7 @@ header{
 }
 .car-text-left1 {
   font-size: 25px;
-  margin-bottom: 25%;
+  margin-bottom: 20%;
   text-align: left;
   font-weight: 600;
 }
@@ -88,16 +113,11 @@ header{
 }
 .car-text-mid1 {
   font-size: 25px;
-  margin-bottom: 25%;
+  margin-bottom: 20%;
   text-align: center;
   font-weight: 600;
 }
 
-/* Styling the images of the carousel */
-
-.carousel-item > img {
-  height: 700px;
-}
 
 /* Services section styling */
 
@@ -131,6 +151,12 @@ header{
 
 .g-4 > .col:hover {
   transform: scale(1.1);
+}
+
+/* User Review Style */
+.fw-normal {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* Footer styling */
