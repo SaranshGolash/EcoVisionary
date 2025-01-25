@@ -21,6 +21,12 @@ header{
     color: #007bff;
 }
 
+/* about image */
+.about-img {
+    width: 95%;
+    margin-left: 40px;
+}
+
 /* Button style */
 .btn-primary{
     background-color: #24b164;
@@ -40,17 +46,22 @@ header{
 
 /* About Page elements alignment */
 
-.about-body > h2 {
+.about-body > h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
     font-weight: bolder;
-    
 }
 
 .about-body > h2 {
-    font-size: 30px;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.about-body > h3 {
+    margin-top: 20px;
+    font-size: 40px;
     font-weight: bolder;
 }
 

@@ -56,6 +56,43 @@ header{
   margin-bottom: 20px;
 }
 
+.car-text {
+  font-size: 70px;
+  text-align: right;
+  font-weight: 800;
+  -webkit-text-stroke: 2px black;
+}
+.car-text1 {
+  font-size: 25px;
+  margin-bottom: 25%;
+  text-align: right;
+  font-weight: 600;
+}
+.car-text-left {
+  font-size: 70px;
+  text-align: left;
+  font-weight: 800;
+  -webkit-text-stroke: 2px black;
+}
+.car-text-left1 {
+  font-size: 25px;
+  margin-bottom: 25%;
+  text-align: left;
+  font-weight: 600;
+}
+.car-text-mid {
+  font-size: 70px;
+  text-align: center;
+  font-weight: 800;
+  -webkit-text-stroke: 2px black;
+}
+.car-text-mid1 {
+  font-size: 25px;
+  margin-bottom: 25%;
+  text-align: center;
+  font-weight: 600;
+}
+
 /* Styling the images of the carousel */
 
 .carousel-item > img {
