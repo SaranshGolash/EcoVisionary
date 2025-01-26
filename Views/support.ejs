@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EcoVisionary</title>
+    <link rel="shortcut icon" href="../Public/Images/xml.png" type="image/svg+xml">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -117,66 +122,74 @@
       </div>
     </header>
 
-    <section class="support-section">
+    <!-- Hero video -->
+    <section class="hero-section">
+      <div class="d-flex">
+        <div class="support-div-hero" data-aos="fade-left">
+          <h1>Support Center</h1>
+          <h2>How Can We Help You?</h2>
+          <p>
+            Welcome to the Support Center! Whether you’re a buyer, seller, or
+            manufacturer, we’re here to assist you every step of the way.
+            Explore the resources below to find answers, troubleshoot issues,
+            and get the most out of our platform.
+          </p>
+        </div>
+        <div class="hero-vid" data-aos="fade-right">
+          <video
+            src="../Public/Videos/customer-support.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="support-section my-4">
       <div class="support-div">
-        <h1>
-          Support Center
-          <img src="/Public/Images/support.png" alt="help" id="support" />
-        </h1>
-        <div class="me-5 ms-5 py-4 my-2 border-top border-success"></div>
-
-        <!-- How Can We Help You? -->
-
-        <h2>How Can We Help You?</h2>
-        <p>
-          Welcome to the Support Center! Whether you’re a buyer, seller, or
-          manufacturer, we’re here to assist you every step of the way. Explore
-          the resources below to find answers, troubleshoot issues, and get the
-          most out of our platform.
-        </p>
-        <div class="me-5 ms-5 py-4 my-2 border-top border-success"></div>
-
         <!-- Frequently Asked Questions -->
 
-        <h2>Frequently Asked Questions</h2>
-        <h4>Q: How do I create an account?</h4>
-        <p>
+        <h2 data-aos="fade-up" data-aos-duration="600">Frequently Asked Questions</h2>
+        <div class="me-5 ms-5 py-4 my-2 border-top border-success"></div>
+        <h4 data-aos="fade-up" data-aos-duration="700">Q: How do I create an account?</h4>
+        <p data-aos="fade-up" data-aos-duration="700">
           A: Click on the “Sign Up” button at the top of the homepage, provide
           the required information, and start your journey with us.
         </p>
-        <h4>Q: What payment methods are accepted?</h4>
-        <p>
+        <h4 data-aos="fade-up" data-aos-duration="700">Q: What payment methods are accepted?</h4>
+        <p data-aos="fade-up" data-aos-duration="700">
           A: We accept all major credit/debit cards, PayPal, and other secure
           payment gateways.
         </p>
-        <h4>Q: Can I cancel or return an order?</h4>
-        <p>
+        <h4 data-aos="fade-up" data-aos-duration="800">Q: Can I cancel or return an order?</h4>
+        <p data-aos="fade-up" data-aos-duration="800">
           A: Yes, orders can be canceled or returned based on our return policy.
           Visit "Your Profile>Orders>Return Order" for more details.
         </p>
-        <h4>Q: How do I contact a seller or buyer?</h4>
-        <p>
+        <h4 data-aos="fade-up" data-aos-duration="800">Q: How do I contact a seller or buyer?</h4>
+        <p class="mb-5" data-aos="fade-up" data-aos-duration="800">
           A: Use the in-app messaging feature to communicate securely with other
           users.
         </p>
-        <div class="me-5 ms-5 py-4 my-2 border-top border-success"></div>
 
         <!-- Need to know more -->
 
-        <h2>Need More Help?</h2>
-        <p>
+        <h2 data-aos="fade-up" data-aos-duration="500">Need More Help?</h2>
+        <div class="me-5 ms-5 py-4 my-2 border-top border-success"></div>
+        <p data-aos="fade-up" data-aos-duration="600">
           If you couldn’t find the answer you were looking for, don’t hesitate
           to reach out. Our dedicated support team is here to assist you.
         </p>
-        <h4>Contact Us</h4>
+        <h4 data-aos="fade-up" data-aos-duration="600">Contact Us</h4>
         <ul>
-          <li><strong>Email:</strong> support@yourwebsite.com</li>
-          <li><strong>Phone:</strong> +1 (800) 123-4567</li>
-          <li><strong>Live Chat:</strong> Available 24/7 on our website</li>
+          <li data-aos="fade-right" data-aos-duration="500"><strong>Email:</strong> support@yourwebsite.com</li>
+          <li data-aos="fade-right" data-aos-duration="600"><strong>Phone:</strong> +1 (800) 123-4567</li>
+          <li data-aos="fade-right" data-aos-duration="700"><strong>Live Chat:</strong> Available 24/7 on our website</li>
         </ul>
-        <h4>Follow Us</h4>
-        <p>Stay updated on the latest features, tips, and community stories:</p>
-        <ul>
+        <h4 data-aos="fade-up" data-aos-duration="500">Follow Us</h4>
+        <p data-aos="fade-up" data-aos-duration="600">Stay updated on the latest features, tips, and community stories:</p>
+        <ul data-aos="fade-left" data-aos-duration="600">
           <li>
             Instagram
             <img
@@ -197,148 +210,152 @@
     </section>
 
     <!-- FOOTER -->
-    <div class="footer-container">
-      <div class="col-md-1 mt-2 mb-md-0 ms-5">
-        <a href="/">
-          <img
-            src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png"
-            alt=""
-            class="logo"
-            width="120"
-            height="auto"
-          />
-        </a>
+      <div class="footer-container">
+        <div class="col-md-1 mt-2 mb-md-0 ms-5">
+          <a href="/">
+            <img
+              src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png"
+              alt=""
+              class="logo"
+              width="120"
+              height="auto"
+            />
+          </a>
+        </div>
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5>COMPANY</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Features</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Reviews</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">About Us</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Services</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5>SHOP</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Products</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5>HELP</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Support Center</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Teams & Conditions</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Blogs</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden"
+                      >Email address</label
+                    >
+                    <input
+                      id="newsletter1"
+                      type="text"
+                      class="form-control"
+                      placeholder="Email address"
+                    />
+                    <button class="btn btn-primary" type="button">
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-success"
+            >
+              <p>© 2024 Company, Inc. All rights reserved.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#"
+                    ><img
+                      src="../Public/Images/fb icon.png"
+                      alt=""
+                      width="24"
+                      height="24"
+                  /></a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#"
+                    ><img
+                      src="../Public/Images/insta icon.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                  /></a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#"
+                    ><img
+                      src="../Public/Images/x icon.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
       </div>
-      <div class="container">
-        <footer class="py-5">
-          <div class="row">
-            <div class="col-6 col-md-2 mb-3">
-              <h5>COMPANY</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Home</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Features</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Reviews</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">About Us</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Services</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
-              <h5>SHOP</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Products</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
-              <h5>HELP</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Support Center</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Teams & Conditions</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Blogs</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-md-5 offset-md-1 mb-3">
-              <form>
-                <h5>Subscribe to our newsletter</h5>
-                <p>Monthly digest of what's new and exciting from us.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden"
-                    >Email address</label
-                  >
-                  <input
-                    id="newsletter1"
-                    type="text"
-                    class="form-control"
-                    placeholder="Email address"
-                  />
-                  <button class="btn btn-primary" type="button">
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <div
-            class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-success"
-          >
-            <p>© 2024 Company, Inc. All rights reserved.</p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3">
-                <a class="link-body-emphasis" href="#"
-                  ><img
-                    src="../Public/Images/fb icon.png"
-                    alt=""
-                    width="24"
-                    height="24"
-                /></a>
-              </li>
-              <li class="ms-3">
-                <a class="link-body-emphasis" href="#"
-                  ><img
-                    src="../Public/Images/insta icon.png"
-                    alt=""
-                    width="30"
-                    height="30"
-                /></a>
-              </li>
-              <li class="ms-3">
-                <a class="link-body-emphasis" href="#"
-                  ><img
-                    src="../Public/Images/x icon.png"
-                    alt=""
-                    width="30"
-                    height="30"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </footer>
-      </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-      const toggleDarkMode = () => {
-      const body = document.body;
-      body.classList.toggle('dark-mode');
-      const toggleButton = document.getElementById('darkModeToggle');
-      if(body.classList.contains('dark-mode')) {
-        toggleButton.innerHTML = "<i class='bx bx-sun'></i>";
-        localStorage.setItem('theme', 'dark');
-      } else {
-        toggleButton.innerHTML = "<i class='bx bx-moon'></i>";
-        localStorage.setItem('theme', 'light')
-      }
-    };
+      AOS.init();
 
-    window.onload = () => {
-      const savedTheme = localStorage.getItem('theme')
-      if(savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        document.getElementById('darkModeToggle').innerHTML = "<i class='bx bx-sun'></i>";
-      }
-    };
+      const toggleDarkMode = () => {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+        const toggleButton = document.getElementById("darkModeToggle");
+        if (body.classList.contains("dark-mode")) {
+          toggleButton.innerHTML = "<i class='bx bx-sun'></i>";
+          localStorage.setItem("theme", "dark");
+        } else {
+          toggleButton.innerHTML = "<i class='bx bx-moon'></i>";
+          localStorage.setItem("theme", "light");
+        }
+      };
+
+      window.onload = () => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.body.classList.add("dark-mode");
+          document.getElementById("darkModeToggle").innerHTML =
+            "<i class='bx bx-sun'></i>";
+        }
+      };
     </script>
   </body>
 </html>

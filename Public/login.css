@@ -1,12 +1,55 @@
-body {
-    background-image: linear-gradient(to left, #C2FFC7, #9EDF9C);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 90vh;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  background-color: #E9ECEF;
+  font-family: "Noto Sans", serif;
+}
+
+/* Theme Toggle */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode .nav-link {
+  color: #ffffff;
+}
+header {
+  background-image: linear-gradient(to left, #C2FFC7, #55cb51);
+}
+body.dark-mode header {
+  background-image: linear-gradient(to left, #7cf687, #41bc3d); /* Dark mode gradient */
+}
+.nav-link {
+  color: #000000;
+}
+#darkModeToggle{
+  border: 2px solid;
+  border-radius: 50px;
+}
+
+body.dark-mode .footer-container {
+  background-image: linear-gradient(to left, #7cf687, #41bc3d);
+}
+
+body.dark-mode .footer-container li>a {
+  color: #000000;
+}
+
+/* NavBar */
+header{
+  background-image: linear-gradient(to left, #c4ffca, #59ed54);
+  border: none !important;
+}
+#navBarList {
+  font-weight: 500;
+  color: rgb(43, 42, 42);
+}
+.nav-link:hover{
+  color: #fff !important;
+}
+.nav-link:active{
+  color: #007bff;
 }
   
   /* Container for the entire form */
@@ -18,6 +61,29 @@ body {
     margin-top: 5px;
 }
   
+/* Login button styling */
+
+#login {
+  background-color: #16742e;
+  color: aliceblue;
+  font-weight: 700;
+}
+#login:hover {
+  background-color: #24b164;
+}
+
+/* Sign Up button styling */
+
+.btn-signUp {
+  background-color: #24b164;
+  color: aliceblue;
+  font-weight: 700;
+}
+.btn-signUp:hover {
+  background-color: #16742e;
+  color: aliceblue;
+}
+
   /* Heading styles */
 .heading {
     font-size: 2rem;
