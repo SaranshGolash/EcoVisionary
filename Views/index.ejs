@@ -731,8 +731,18 @@
       const toggleButton = document.getElementById('darkModeToggle');
       if(body.classList.contains('dark-mode')) {
         toggleButton.innerHTML = "<i class='bx bx-sun'></i>";
+        localStorage.setItem('theme', 'dark');
       } else {
         toggleButton.innerHTML = "<i class='bx bx-moon'></i>";
+        localStorage.setItem('theme', 'light')
+      }
+    };
+
+    window.onload = () => {
+      const savedTheme = localStorage.getItem('theme')
+      if(savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        document.getElementById('darkModeToggle').innerHTML = "<i class='bx bx-sun'></i>";
       }
     };
     </script>
