@@ -28,6 +28,10 @@ body.dark-mode header {
   border-radius: 50px;
 }
 
+body.dark-mode .footer-container li>a {
+  color: #000000;
+}
+
 /* Nav-Bar styling */
 header{
   background-image: linear-gradient(to left, #C2FFC7, #55cb51);
