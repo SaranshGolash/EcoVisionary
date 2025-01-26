@@ -28,6 +28,10 @@ body.dark-mode header {
   border-radius: 50px;
 }
 
+body.dark-mode .footer-container {
+  background-image: linear-gradient(to left, #7cf687, #41bc3d);
+}
+
 body.dark-mode .footer-container li>a {
   color: #000000;
 }
@@ -46,6 +50,14 @@ header{
   .nav-link li>a:active{
     color: #fff;
   }
+
+  /* Button style */
+.btn-primary{
+  background-color: #24b164;
+}
+.btn-primary:hover {
+  background-color: #16742e;
+}
   
  /* Login button styling */
 
