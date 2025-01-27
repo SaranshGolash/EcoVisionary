@@ -44,6 +44,9 @@ body.dark-mode header {
 body.dark-mode .footer-container {
   background-image: linear-gradient(to left, #7cf687, #41bc3d);
 }
+body.dark-mode form>label {
+  color: #000000;
+}
 
 body.dark-mode .footer-container li > a {
   color: #000000;
