@@ -5,6 +5,12 @@ body {
   font-family: "Noto Sans", serif;
 }
 
+h3 {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
 /* Theme Toggle */
 
 body.dark-mode {
@@ -40,10 +46,9 @@ body.dark-mode .footer-container li > a {
   color: #000000;
 }
 
-/* NavBar */
+/* Nav-Bar styling */
 header {
-  background-image: linear-gradient(to left, #c4ffca, #59ed54);
-  border: none !important;
+  background-image: linear-gradient(to left, #c2ffc7, #55cb51);
 }
 #navBarList {
   font-weight: 500;
@@ -52,59 +57,9 @@ header {
 .nav-link:hover {
   color: #fff !important;
 }
-.nav-link:active {
-  color: #007bff;
+.nav-link li > a:active {
+  color: #fff;
 }
-
-/* about image */
-.about-img {
-  width: 100%;
-}
-
-/* Button style */
-.btn-primary {
-  background-color: #24b164;
-}
-.btn-primary:hover {
-  background-color: #16742e;
-}
-
-/* About Page alignment */
-
-.about-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* About Page elements alignment */
-
-.about-body > h2,
-h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bolder;
-}
-
-.about-body > h2 {
-  margin-top: 20px;
-  font-size: 50px;
-  font-weight: bolder;
-}
-
-.about-body > h3 {
-  margin-top: 20px;
-  font-size: 40px;
-  font-weight: bolder;
-}
-
-.about-body > p {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-/* Login button styling */
 
 #login {
   background-color: #16742e;
@@ -126,36 +81,46 @@ h3 {
   background-color: #16742e;
   color: aliceblue;
 }
-
-/* Adjustment in underlines created via divs to highlight the headings */
-
-.py-2 {
-  width: 385px;
+.icon-link > .bi {
+  width: 0.75em;
+  height: 0.75em;
 }
 
-#story-line {
-  width: 130px;
+/* Main Body */
+.main-body {
+  width: 1200px;
+  margin-left: 10%;
+}
+.main-body > ol {
+  margin-left: 5% !important;
+  list-style: none;
 }
 
-#offer-line {
-  width: 200px;
+.artist-card {
+  display: flex;
+  gap: 20px;
 }
 
-#mission-line {
-  width: 165px;
+.card-text {
+  font-weight: bold;
+  font-size: 25px;
+}
+.meta-desc {
+  font-style: italic;
+}
+.artist {
+  margin-left: 70%;
 }
 
-#vision-line {
-  width: 145px;
-}
 
-#choose-line {
-  width: 220px;
+/* Button style */
+.btn-primary {
+  background-color: #24b164;
 }
-
-#movement-line {
-  width: 270px;
+.btn-primary:hover {
+  background-color: #16742e;
 }
+/* Footer styling */
 
 .footer-container {
   background-image: linear-gradient(to left, #c4ffca, #59ed54);
