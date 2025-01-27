@@ -8,6 +8,11 @@
       href="../Public/Images/xml.png"
       type="image/svg+xml"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,6 +45,7 @@
 
       <ul
         class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 gap-3"
+        id="nav-links"
       >
         <li>
           <a
@@ -55,18 +61,15 @@
             href="#"
             class="nav-link px-2"
             id="navBarList"
-            type="about"
             onclick="window.location.href='/about'"
             >About Us</a
           >
         </li>
-
         <li>
           <a
             href="#"
             class="nav-link px-2"
             id="navBarList"
-            type="products"
             onclick="window.location.href='/products'"
             >Products</a
           >
@@ -76,7 +79,6 @@
             href="#"
             class="nav-link px-2"
             id="navBarList"
-            type="services"
             onclick="window.location.href='/services'"
             >Services</a
           >
@@ -86,7 +88,6 @@
             href="#"
             class="nav-link px-2"
             id="navBarList"
-            type="support"
             onclick="window.location.href='/support'"
             >Support Center</a
           >
@@ -95,7 +96,15 @@
 
       <div class="col-md-3 text-end">
         <button
-          type="login"
+          type="button"
+          class="btn btn-darkmode-toggle"
+          id="darkModeToggle"
+          onclick="toggleDarkMode()"
+        >
+          <i class="bx bx-moon"></i>
+        </button>
+        <button
+          type="button"
           class="btn btn-login me-2"
           id="login"
           onclick="window.location.href='/login'"
@@ -103,7 +112,7 @@
           Login
         </button>
         <button
-          type="sign-up"
+          type="button"
           class="btn btn-signUp me-5"
           id="signUp"
           onclick="window.location.href='/signUp'"
@@ -114,12 +123,12 @@
     </header>
 
     <!-- Main Body -->
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <div class="px-4 pt-5 my-5 text-center">
       <h1 class="display-4 fw-bold text-body-emphasis">
         Services Offered by Us
       </h1>
       <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">
+        <p class="lead mb-4" data-aos="fade-right" data-aos-duration="500">
           We are dedicated to providing comprehensive waste management solutions
           tailored to meet the unique needs of our clientele. Our goal is to not
           only manage waste but also to promote environmental sustainability
@@ -128,7 +137,7 @@
         </p>
       </div>
       <div class="overflow-hidden" style="max-height: 50vh">
-        <div class="container px-5">
+        <div class="container px-5" data-aos="fade-left" data-aos-duration="500">
           <video
             src="../Public/Images/Shipper goes to deliver goods.mp4"
             width="700"
@@ -172,49 +181,82 @@
           Featured Artist
         </h3>
         <div class="artist-card">
-          <div class="card" style="width: 18rem">
-            <img src="../Public/Images/product1.jpg" class="card-img-top" alt="..." />
+          <div class="card" style="width: 18rem" data-aos="fade-left" data-aos-duration="500">
+            <img
+              src="../Public/Images/product1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
-              <p class="card-text">
-                Utensils Stand
+              <p class="card-text">Utensils Stand</p>
+              <p class="meta-desc">
+                utensils stand is the perfect solution for organizing your
+                kitchen tools. Designed with both style and functionality in
+                mind, it offers a sleek and modern appearance while ensuring
+                durability and stability.
               </p>
-              <p class="meta-desc">utensils stand is the perfect solution for organizing your kitchen tools. Designed with both style and functionality in mind, it offers a sleek and modern appearance while ensuring durability and stability.</p>
               <p class="artist">~ Ron</p>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
-            <img src="../Public/Images/product2.jpeg" class="card-img-top" alt="..." />
+          <div class="card" style="width: 18rem" data-aos="fade-left" data-aos-duration="600">
+            <img
+              src="../Public/Images/product2.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
-              <p class="card-text">
-                Handpainted Glass Bottle
+              <p class="card-text">Handpainted Glass Bottle</p>
+              <p class="meta-desc">
+                A handpainted glass bottle is an artistic container adorned with
+                unique designs by skilled artisans. It serves as a decorative
+                piece, adding a touch of elegance and personalized charm to any
+                space.
               </p>
-              <p class="meta-desc">A handpainted glass bottle is an artistic container adorned with unique designs by skilled artisans. It serves as a decorative piece, adding a touch of elegance and personalized charm to any space.</p>
               <p class="artist">~ Emily</p>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
-            <img src="../Public/Images/product3.jpeg" class="card-img-top" alt="..." />
+          <div class="card" style="width: 18rem" data-aos="fade-left" data-aos-duration="700">
+            <img
+              src="../Public/Images/product3.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
-              <p class="card-text">
-                Vase
+              <p class="card-text">Vase</p>
+              <p class="meta-desc">
+                A vase is a decorative container, often made from ceramic,
+                glass, or metal, used to display flowers or as a standalone
+                ornament. Its design and style can range from simple and
+                minimalist to ornate and vibrant.
               </p>
-              <p class="meta-desc">A vase is a decorative container, often made from ceramic, glass, or metal, used to display flowers or as a standalone ornament. Its design and style can range from simple and minimalist to ornate and vibrant.</p>
               <p class="artist">~ Mark</p>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
-            <img src="../Public/Images/product4.jpg" class="card-img-top" alt="..." />
+          <div class="card" style="width: 18rem" data-aos="fade-left" data-aos-duration="800">
+            <img
+              src="../Public/Images/product4.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
-              <p class="card-text">
-                Bandharwar
+              <p class="card-text">Bandharwar</p>
+              <p class="meta-desc">
+                Bandhanwar, also known as Toran, is a traditional Indian
+                decorative hanging crafted from vibrant materials like threads,
+                beads, and mirrors. Hung at doorways, it symbolizes prosperity,
+                good fortune, and a warm welcome.
               </p>
-              <p class="meta-desc">Bandhanwar, also known as Toran, is a traditional Indian decorative hanging crafted from vibrant materials like threads, beads, and mirrors. Hung at doorways, it symbolizes prosperity, good fortune, and a warm welcome.</p>
               <p class="artist">~ Pranab</p>
             </div>
           </div>
         </div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-center mb-3 my-4 me-3">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-5 border-success">
+        <div
+          class="d-grid gap-2 d-md-flex justify-content-md-center mb-3 my-4 me-3"
+        >
+          <button
+            type="button"
+            class="btn btn-primary btn-lg px-4 me-5 border-success"
+          >
             See More
           </button>
         </div>
@@ -222,57 +264,373 @@
     </section>
 
     <div class="container" id="custom-cards">
-      <h3 class="align-items-center me-5 ms-5 mb-4 pb-4 border-bottom border-success border-1">Categories</h3>
-  
+      <h3
+        class="align-items-center me-5 ms-5 mb-4 pb-4 border-bottom border-success border-1"
+      >
+        Categories
+      </h3>
+
       <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../Public/Images/product8.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Artworks & Products</h3>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../Public/Images/coursel2.png');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Paintings & Frames</h3>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../Public/Images/product10.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 pb-5 display-6 lh-1 fw-bold">Sculptures</h3>
+        <div class="col" data-aos="fade-up" data-aos-duration="600">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('../Public/Images/product8.jpg')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Artworks & Products
+              </h3>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../Public/Images/product12.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 pb-5 display-6 lh-1 fw-bold">Recycled Art</h3>
+        <div class="col" data-aos="fade-up" data-aos-duration="600">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('../Public/Images/coursel2.png')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Paintings & Frames
+              </h3>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../Public/Images/product4.jpg');">
+        <div class="col" data-aos="fade-up" data-aos-duration="600">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('../Public/Images/product10.jpg')"
+          >
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 pb-5 display-6 lh-1 fw-bold">Home Decor</h3>
+              <h3 class="pt-5 mt-5 mb-4 pb-5 display-6 lh-1 fw-bold">
+                Sculptures
+              </h3>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('../Public/Images/product13.jpg');">
+        <div class="col" data-aos="fade-up" data-aos-duration="700">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('../Public/Images/product12.jpg')"
+          >
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 pb-5 display-6 lh-1 fw-bold">Accessories</h3>
+              <h3 class="pt-5 mt-5 mb-4 pb-5 display-6 lh-1 fw-bold">
+                Recycled Art
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up" data-aos-duration="700">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('../Public/Images/product4.jpg')"
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 pb-5 display-6 lh-1 fw-bold">
+                Home Decor
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up" data-aos-duration="700">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('../Public/Images/product13.jpg')"
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 pb-5 display-6 lh-1 fw-bold">
+                Accessories
+              </h3>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="call-to-act" style="margin-bottom: 40px">
+      <div style="position: relative; text-align: center">
+        <img
+          src="../Public/Images/call-to-action.png"
+          alt=""
+          width="90%"
+          style="border-radius: 10px; filter: brightness(70%)"
+        />
+        <div
+          style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            padding: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+          "
+        >
+          <h2
+            style="
+              margin: 0;
+              font-size: 2.5rem;
+              font-weight: bold;
+              letter-spacing: 2px;
+            "
+            data-aos="fade-up" data-aos-duration="600"
+          >
+            Join us now and start selling!
+          </h2>
+          <div style="margin-top: 20px" data-aos="fade-up" data-aos-duration="700">
+            <button
+              id="start-selling-btn"
+              style="
+                background-color: #16742e;
+                color: white;
+                padding: 15px 30px;
+                border: none;
+                border-radius: 10px;
+                font-weight: bold;
+                cursor: pointer;
+                font-size: 1rem;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+              "
+              onmouseover="this.style.backgroundColor='#16742e'; this.style.transform='scale(1.1)';"
+              onmouseout="this.style.backgroundColor='#24b164'; this.style.transform='scale(1)';"
+            >
+              Start Selling
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="floating-form"
+      style="
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        text-align: left;
+        transition: transform 0.3s ease;
+        width: 80%;
+        max-width: 600px;
+      "
+    >
+      <h2 style="text-align: center">Contact Us</h2>
+      <form id="contact-form">
+        <div style="display: flex; gap: 10px">
+          <div style="flex: 1">
+            <label for="name">Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              style="
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+              "
+            />
+          </div>
+          <div style="flex: 1">
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              style="
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+              "
+            />
+          </div>
+        </div>
+        <div style="display: flex; gap: 10px">
+          <div style="flex: 1">
+            <label for="address">Address:</label><br />
+            <input
+              type="text"
+              id="address"
+              name="address"
+              style="
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+              "
+            />
+          </div>
+          <div style="flex: 1">
+            <label for="city">City:</label><br />
+            <input
+              type="text"
+              id="city"
+              name="city"
+              style="
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+              "
+            />
+          </div>
+        </div>
+        <div style="display: flex; gap: 10px">
+          <div style="flex: 1">
+            <label for="state">State:</label><br />
+            <input
+              type="text"
+              id="state"
+              name="state"
+              style="
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+              "
+            />
+          </div>
+          <div style="flex: 1">
+            <label for="pincode">Pincode:</label><br />
+            <input
+              type="text"
+              id="pincode"
+              name="pincode"
+              style="
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+              "
+            />
+          </div>
+        </div>
+        <div style="display: flex; gap: 10px">
+          <div style="flex: 1">
+            <label for="phone">Phone Number:</label><br />
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              style="
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+              "
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          style="
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+          "
+        >
+          Submit
+        </button>
+        <button
+          type="button"
+          id="close-form-btn"
+          style="
+            background-color: #ff4500;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+          "
+        >
+          Close
+        </button>
+      </form>
+    </div>
+
+    <div
+      id="loading-indicator"
+      style="
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        z-index: 1001;
+      "
+    >
+      <img
+        src="../Public/Images/Animation - 1738005517644.gif"
+        alt="Loading..."
+        style="width: 150px"
+      />
+    </div>
+
+    <div
+      id="thank-you-message"
+      style="
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        text-align: center;
+      "
+    >
+      <h2>Thanks for using our Site!</h2>
+      <p>Your information has been submitted successfully. You will receive a call from our side shortly.</p>
+      <button
+        type="button"
+        id="close-thank-you-btn"
+        style="
+          background-color: #19904a;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          margin-top: 10px;
+        "
+      >
+        Close
+      </button>
     </div>
 
     <!-- FOOTER -->
@@ -396,10 +754,62 @@
       </div>
     </div>
 
-    <script
-      src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+
+      document.getElementById("start-selling-btn").onclick = function () {
+        document.getElementById("floating-form").style.display = "block";
+        setTimeout(function () {
+          document.getElementById("floating-form").style.transform =
+            "translate(-50%, -50%) scale(1)";
+        }, 10);
+      };
+
+      document.getElementById("close-form-btn").onclick = function () {
+        document.getElementById("floating-form").style.transform =
+          "translate(-50%, -50%) scale(0)";
+        setTimeout(function () {
+          document.getElementById("floating-form").style.display = "none";
+        }, 300);
+      };
+
+      document.getElementById("contact-form").onsubmit = function (event) {
+        event.preventDefault();
+        document.getElementById("loading-indicator").style.display = "block";
+        document.getElementById("floating-form").style.display = "none";
+        setTimeout(function () {
+          document.getElementById("thank-you-message").style.display = "block";
+          document.getElementById("loading-indicator").style.display = "none";
+        }, 1000);
+      };
+
+      document.getElementById("close-thank-you-btn").onclick = function () {
+        document.getElementById("thank-you-message").style.display = "none";
+      };
+
+      const toggleDarkMode = () => {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+        const toggleButton = document.getElementById("darkModeToggle");
+        if (body.classList.contains("dark-mode")) {
+          toggleButton.innerHTML = "<i class='bx bx-sun'></i>";
+          localStorage.setItem("theme", "dark");
+        } else {
+          toggleButton.innerHTML = "<i class='bx bx-moon'></i>";
+          localStorage.setItem("theme", "light");
+        }
+      };
+
+      window.onload = () => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.body.classList.add("dark-mode");
+          document.getElementById("darkModeToggle").innerHTML =
+            "<i class='bx bx-sun'></i>";
+        }
+      };
+    </script>
   </body>
 </html>

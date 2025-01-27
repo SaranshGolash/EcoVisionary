@@ -17,6 +17,9 @@ body.dark-mode {
   background-color: #121212;
   color: #ffffff;
 }
+body.dark-mode>h1 {
+  color: #ffffff;
+}
 .dark-mode .nav-link {
   color: #ffffff;
 }
@@ -112,6 +115,9 @@ header {
   margin-left: 70%;
 }
 
+.call-to-act>img {
+  border-radius: 20px !important;
+}
 
 /* Button style */
 .btn-primary {
