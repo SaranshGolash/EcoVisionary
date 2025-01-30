@@ -5,7 +5,7 @@ const app = express();
 const port = 4000;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-app.use("/Public", express.static(path.join(__dirname, "Public")));
+app.use("/Public", express.static(path.join(__dirname, "public")));
 
 
 // Home Page Route
@@ -15,19 +15,28 @@ app.get("/", async (req, res) => {
 });
 
 // Cart Page Route
+
 app.get("/cart", async(req,res)=> {
-  res.render("cart.ejs")
-})
+  res.render("cart.ejs");
+});
 
 // checkout Page Route
+
 app.get("/checkout", async(req,res)=> {
-  res.render("checkout.ejs")
-})
+  res.render("checkout.ejs");
+});
 
 // Dashboard Page Route
+
 app.get("/dashboard", async(req, res)=> {
-  res.render("dashboard.ejs")
-})
+  res.render("dashboard.ejs");
+});
+
+// Orders Page Route
+
+app.get("/orders", async(req, res) => {
+  res.render("orders.ejs");
+});
 
 // Login Page Route
 

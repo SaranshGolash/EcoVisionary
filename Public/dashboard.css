@@ -4,7 +4,6 @@ body{
   background-color: #E9ECEF;
   font-family: "Noto Sans", serif;
 }
-
 /* Theme Toggle */
 
 body.dark-mode {
@@ -36,6 +35,22 @@ body.dark-mode .footer-container {
 body.dark-mode .footer-container li>a {
   color: #000000;
 }
+
+body.dark-mode .footer-container {
+  background-image: linear-gradient(to left, #7cf687, #41bc3d);
+}
+body.dark-mode form>label {
+  color: #000000;
+}
+
+body.dark-mode .footer-container li > a {
+  color: #000000;
+}
+
+body.dark-mode .read-articles {
+  color: azure;
+}
+
 /* Nav-Bar styling */
 header{
   background-image: linear-gradient(to left, #C2FFC7, #55cb51);
@@ -49,4 +64,19 @@ header{
 }
 .nav-link li>a:active{
   color: #fff;
+}
+
+/* Footer styling */
+
+.footer-container {
+  background-image: linear-gradient(to left, #c4ffca, #59ed54);
+  /* background-color: #282A35; */
+  color: rgb(35, 35, 35);
+}
+.footer-container li > a {
+  color: rgb(55, 55, 55);
+}
+.footer-container a > .logo {
+  margin-top: 25px;
+  margin-left: 42px;
 }

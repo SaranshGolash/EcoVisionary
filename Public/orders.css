@@ -1,0 +1,150 @@
+body{
+    background-color: #E9ECEF;
+    font-family: "Noto Sans", serif;
+  }
+  
+  /* Theme Toggle */
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  .dark-mode .nav-link {
+    color: #ffffff;
+  }
+  header {
+    background-image: linear-gradient(to left, #C2FFC7, #55cb51);
+  }
+  body.dark-mode header {
+    background-image: linear-gradient(to left, #7cf687, #41bc3d); /* Dark mode gradient */
+  }
+  .nav-link {
+    color: #000000;
+  }
+  #darkModeToggle{
+    border: 2px solid;
+    border-radius: 100px;
+    background: transparent;
+  }
+  
+  body.dark-mode .footer-container {
+    background-image: linear-gradient(to left, #7cf687, #41bc3d);
+  }
+  
+  body.dark-mode .footer-container li>a {
+    color: #000000;
+  }
+
+  body.dark-mode a {
+    color: #ffffff;
+  }
+  
+  /* Nav-Bar styling */
+  header{
+    background-image: linear-gradient(to left, #C2FFC7, #55cb51);
+  }
+  #navBarList {
+    font-weight: 500;
+    color: rgb(43, 42, 42);
+  }
+  .nav-link:hover{
+    color: #fff !important;
+  }
+  .nav-link li>a:active{
+    color: #fff;
+  }
+  
+  /* Login button styling */
+  
+  #login {
+    background-color: #16742e;
+    color: aliceblue;
+    font-weight: 700;
+  }
+  #login:hover {
+    background-color: #24b164;
+  }
+  
+  /* Sign Up button styling */
+  
+  .btn-signUp {
+    background-color: #24b164;
+    color: aliceblue;
+    font-weight: 700;
+  }
+  .btn-signUp:hover {
+    background-color: #16742e;
+    color: aliceblue;
+  }
+
+  /* Main Body styling */
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-flow: column wrap;
+    width: 1300px;
+    padding-left: 400px;
+  }
+
+  .mini-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .sub-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 45px;
+  }
+
+  #btn-search {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    border: black 2px solid;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .below-sub-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 45px;
+  }
+
+  .drop-list {
+    margin-top: 20px;
+  }
+
+  a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+  }
+
+  h5 > a:hover {
+    color: rgb(38, 156, 230) !important;
+  }
+  
+  /* Footer styling */
+  
+  .footer-container{
+    background-image: linear-gradient(to left, #c4ffca, #59ed54);
+    /* background-color: #282A35; */
+    color: rgb(35, 35, 35);
+  }
+  .footer-container li>a{
+    color: rgb(55, 55, 55);
+  }
+  .footer-container a>.logo {
+    margin-top: 25px;
+    margin-left: 42px;
+  }

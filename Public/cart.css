@@ -122,6 +122,21 @@ header{
     color: #1f2937;
 }
 
+/* Footer styling */
+  
+.footer-container{
+  background-image: linear-gradient(to left, #c4ffca, #59ed54);
+  /* background-color: #282A35; */
+  color: rgb(35, 35, 35);
+}
+.footer-container li>a{
+  color: rgb(55, 55, 55);
+}
+.footer-container a>.logo {
+  margin-top: 25px;
+  margin-left: 42px;
+}
+
 @media (max-width: 768px) {
     .card-header {
         text-align: center;

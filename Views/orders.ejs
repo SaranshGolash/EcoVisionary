@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EcoVisionary</title>
+    <link
+      rel="shortcut icon"
+      href="../Public/Images/xml.png"
+      type="image/svg+xml"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../public/orders.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header
+      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3"
+      id="navBar"
+    >
+      <div class="col-md-3 mb-2 mb-md-0 ms-5">
+        <a
+          href="/"
+          class="d-inline-flex link-body-emphasis text-decoration-none"
+        >
+          <img
+            src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png"
+            alt=""
+            width="100"
+            height="auto"
+          />
+        </a>
+      </div>
+
+      <ul
+        class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 gap-3"
+        id="nav-links"
+      >
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2 active"
+            id="navBarList"
+            onclick="window.location.href='/home'"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            onclick="window.location.href='/about'"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            onclick="window.location.href='/products'"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            onclick="window.location.href='/services'"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-2"
+            id="navBarList"
+            onclick="window.location.href='/support'"
+            >Support Center</a
+          >
+        </li>
+      </ul>
+
+      <div class="buttons col-md-3 text-end me-5">
+        <button
+          type="button"
+          class="btn-darkmode-toggle"
+          id="darkModeToggle"
+          onclick="toggleDarkMode()"
+        >
+          <i class="bx bx-moon"></i>
+        </button>
+        <a href="#" onclick="window.location.href='/cart'"
+          ><img
+            src="../Public/Images/cart.png"
+            alt=""
+            width="45px"
+            style="margin-bottom: 5px; margin-left: 5px"
+        /></a>
+        <a href="#" onclick="redirectToDashboard()"
+          ><img
+            src="../Public/Images/user-icon.png"
+            alt=""
+            width="30px"
+            style="margin-bottom: 5px; margin-left: 5px"
+        /></a>
+      </div>
+    </header>
+
+    <!-- Main Body -->
+
+    <div class="main-container">
+        <div class="mini-header">
+            <h6><a href="/dashboard">Your account</a></h6>
+            <h6> > <a href="#">Your orders</a></h6>
+        </div>
+        <div class="sub-header">
+            <h3>Your Orders</h3>
+            <input type="search" id="gsearch" name="gsearch" placeholder="Search orders" style="padding-right: 40px;">
+            <button id="btn-search">Search orders</button>
+        </div>
+        <div class="below-sub-header">
+            <h5><a href="#">Orders</a></h5>
+            <h5><a href="#">Buy Again</a></h5>
+            <h5><a href="#">Not Yet Shipped</a></h5>
+            <h5><a href="#">Cancelled Orders</a></h5>
+        </div>
+        <div class="drop-list">
+            <select>
+                <option value="last30days">Last 30 days</option>
+                <option value="last1month">Last 1 month</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+            </select>
+        </div>
+    </div>
+
+     <!-- FOOTER -->
+     <div class="footer-container">
+        <div class="col-md-1 mt-2 mb-md-0 ms-5">
+          <a href="/">
+            <img
+              src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png"
+              alt=""
+              class="logo"
+              width="120"
+              height="auto"
+            />
+          </a>
+        </div>
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5>COMPANY</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/home" class="nav-link p-0">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Features</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Reviews</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/about" class="nav-link p-0">About Us</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/services" class="nav-link p-0">Services</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="col-6 col-md-2 mb-3">
+                <h5>SHOP</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/products" class="nav-link p-0">Products</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="col-6 col-md-2 mb-3">
+                <h5>HELP</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/support" class="nav-link p-0">Support Center</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Teams & Conditions</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Blogs</a>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden"
+                      >Email address</label
+                    >
+                    <input
+                      id="newsletter1"
+                      type="text"
+                      class="form-control"
+                      placeholder="Email address"
+                    />
+                    <button class="btn btn-primary" type="button">
+                      Subscribe
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+  
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top border-success"
+            >
+              <p>© 2024 Company, Inc. All rights reserved.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#"
+                    ><img
+                      src="../Public/Images/fb icon.png"
+                      alt=""
+                      width="24"
+                      height="24"
+                  /></a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#"
+                    ><img
+                      src="../Public/Images/insta icon.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                  /></a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#"
+                    ><img
+                      src="../Public/Images/x icon.png"
+                      alt=""
+                      width="30"
+                      height="30"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+    <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+
+      const toggleDarkMode = () => {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+        const toggleButton = document.getElementById("darkModeToggle");
+        if (body.classList.contains("dark-mode")) {
+          toggleButton.innerHTML = "<i class='bx bx-sun'></i>";
+          localStorage.setItem("theme", "dark");
+        } else {
+          toggleButton.innerHTML = "<i class='bx bx-moon'></i>";
+          localStorage.setItem("theme", "light");
+        }
+      };
+
+      window.onload = () => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.body.classList.add("dark-mode");
+          document.getElementById("darkModeToggle").innerHTML =
+            "<i class='bx bx-sun'></i>";
+        }
+      };
+      
+
+      document.getElementById("start-selling-btn").onclick = function () {
+        document.getElementById("floating-form").style.display = "block";
+        setTimeout(function () {
+          document.getElementById("floating-form").style.transform =
+            "translate(-50%, -50%) scale(1)";
+        }, 10);
+      };
+
+      document.getElementById("close-form-btn").onclick = function () {
+        document.getElementById("floating-form").style.transform =
+          "translate(-50%, -50%) scale(0)";
+        setTimeout(function () {
+          document.getElementById("floating-form").style.display = "none";
+        }, 300);
+      };
+
+      document.getElementById("contact-form").onsubmit = function (event) {
+        event.preventDefault();
+        document.getElementById("loading-indicator").style.display = "block";
+        document.getElementById("floating-form").style.display = "none";
+        setTimeout(function () {
+          document.getElementById("thank-you-message").style.display = "block";
+          document.getElementById("loading-indicator").style.display = "none";
+        }, 1000);
+      };
+
+      document.getElementById("close-thank-you-btn").onclick = function () {
+        document.getElementById("thank-you-message").style.display = "none";
+      };
+
+      function redirectToDashboard() {
+  const currentUser = sessionStorage.getItem('currentUser');
+  if (currentUser) {
+    window.location.href = '/dashboard';
+  } else {
+    window.location.href = '/login';
+  }
+}
+</script>
+</body>
+</html>

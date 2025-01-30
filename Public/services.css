@@ -53,6 +53,10 @@ body.dark-mode .footer-container li > a {
   color: #000000;
 }
 
+body.dark-mode .read-articles {
+  color: azure;
+}
+
 /* Nav-Bar styling */
 header {
   background-image: linear-gradient(to left, #c2ffc7, #55cb51);
@@ -121,6 +125,10 @@ header {
 
 .call-to-act>img {
   border-radius: 20px !important;
+}
+
+.read-articles {
+  color: rgb(86, 85, 85);
 }
 
 /* Button style */
