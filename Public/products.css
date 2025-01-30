@@ -27,9 +27,10 @@ body.dark-mode header {
 .nav-link {
   color: #000000;
 }
-#darkModeToggle {
+#darkModeToggle{
   border: 2px solid;
-  border-radius: 50px;
+  border-radius: 100px;
+  background: transparent;
 }
 
 body.dark-mode .footer-container {
@@ -53,6 +54,27 @@ header {
 }
 .nav-link li > a:active {
   color: #fff;
+}
+
+/* Custom toastr styles */
+#toast-container > .toast-success {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+}
+
+#toast-container > .toast-error {
+  background-color: #F44336; /* Red background */
+  color: white; /* White text */
+}
+
+#toast-container > .toast-warning {
+  background-color: #FFC107; /* Yellow background */
+  color: black; /* Black text */
+}
+
+#toast-container > .toast-info {
+  background-color: #2196F3; /* Blue background */
+  color: white; /* White text */
 }
 
 /* Button style */

@@ -10,10 +10,6 @@
       type="image/svg+xml"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
@@ -25,7 +21,11 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/Public/support.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="/Public/checkout.css" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -114,7 +114,7 @@
             width="45px"
             style="margin-bottom: 5px; margin-left: 5px"
         /></a>
-        <a href="#" onclick="redirectToDashboard()"
+        <a href="#" onclick="window.location.href='/login'"
           ><img
             src="../Public/Images/user-icon.png"
             alt=""
@@ -124,110 +124,78 @@
       </div>
     </header>
 
-    <!-- Hero video -->
-    <section class="hero-section">
-      <div class="d-flex">
-        <div class="support-div-hero" data-aos="fade-left">
-          <h1>Support Center</h1>
-          <h2>How Can We Help You?</h2>
-          <p>
-            Welcome to the Support Center! Whether you’re a buyer, seller, or
-            manufacturer, we’re here to assist you every step of the way.
-            Explore the resources below to find answers, troubleshoot issues,
-            and get the most out of our platform.
-          </p>
+    <!-- Main Body -->
+    <div class="checkout-container">
+        <div class="form-card">
+            <div class="form-header">
+                <h2 class="mb-0">Checkout Information</h2>
+                <p class="mb-0 mt-2 opacity-75">Please fill in your details to complete the order</p>
+            </div>
+            <div class="form-body">
+                <form>
+                    <div class="row g-4">
+                        <!-- Personal Information -->
+                        <div class="col-12 mb-3">
+                            <h4 class="mb-4" style="color: rgb(35, 35, 35); font-weight: bold;">Personal Information</h4>
+                        </div>
+                        
+                        <div class="col-12">
+                            <label for="fullName" class="form-label required-field">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="form-label required-field">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            <div class="form-text">Order confirmation will be sent to this email</div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label required-field">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <!-- Address Information -->
+                        <div class="col-12 mt-4">
+                            <h4 class="mb-4" style="color: rgb(35, 35, 35); font-weight: bold;">Shipping Address</h4>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label required-field">Street Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter your street address" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="state" class="form-label required-field">State</label>
+                            <select class="form-control" id="state" required>
+                                <option value="">Select State</option>
+                                <option value="CA">California</option>
+                                <option value="NY">New York</option>
+                                <option value="TX">Texas</option>
+                                <!-- Add more states as needed -->
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="city" class="form-label required-field">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="Enter your city" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="pincode" class="form-label required-field">PIN Code</label>
+                            <input type="text" class="form-control" id="pincode" placeholder="Enter PIN code" required>
+                        </div>
+
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="submit-btn btn btn-primary">
+                                Complete Order
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="hero-vid" data-aos="fade-right">
-          <video
-            src="../Public/Videos/customer-support.mp4"
-            autoplay
-            loop
-            muted
-          ></video>
-        </div>
-      </div>
-    </section>
-
-    <section class="support-section my-4">
-      <div class="support-div">
-        <!-- Frequently Asked Questions -->
-
-        <h2 data-aos="fade-up" data-aos-duration="600">
-          Frequently Asked Questions
-        </h2>
-        <div class="me-5 ms-5 py-4 my-2 border-top border-success"></div>
-        <h4 data-aos="fade-up" data-aos-duration="700">
-          Q: How do I create an account?
-        </h4>
-        <p data-aos="fade-up" data-aos-duration="700">
-          A: Click on the “Sign Up” button at the top of the homepage, provide
-          the required information, and start your journey with us.
-        </p>
-        <h4 data-aos="fade-up" data-aos-duration="700">
-          Q: What payment methods are accepted?
-        </h4>
-        <p data-aos="fade-up" data-aos-duration="700">
-          A: We accept all major credit/debit cards, PayPal, and other secure
-          payment gateways.
-        </p>
-        <h4 data-aos="fade-up" data-aos-duration="800">
-          Q: Can I cancel or return an order?
-        </h4>
-        <p data-aos="fade-up" data-aos-duration="800">
-          A: Yes, orders can be canceled or returned based on our return policy.
-          Visit "Your Profile>Orders>Return Order" for more details.
-        </p>
-        <h4 data-aos="fade-up" data-aos-duration="800">
-          Q: How do I contact a seller or buyer?
-        </h4>
-        <p class="mb-5" data-aos="fade-up" data-aos-duration="800">
-          A: Use the in-app messaging feature to communicate securely with other
-          users.
-        </p>
-
-        <!-- Need to know more -->
-
-        <h2 data-aos="fade-up" data-aos-duration="500">Need More Help?</h2>
-        <div class="me-5 ms-5 py-4 my-2 border-top border-success"></div>
-        <p data-aos="fade-up" data-aos-duration="600">
-          If you couldn’t find the answer you were looking for, don’t hesitate
-          to reach out. Our dedicated support team is here to assist you.
-        </p>
-        <h4 data-aos="fade-up" data-aos-duration="600">Contact Us</h4>
-        <ul>
-          <li data-aos="fade-right" data-aos-duration="500">
-            <strong>Email:</strong> support@yourwebsite.com
-          </li>
-          <li data-aos="fade-right" data-aos-duration="600">
-            <strong>Phone:</strong> +1 (800) 123-4567
-          </li>
-          <li data-aos="fade-right" data-aos-duration="700">
-            <strong>Live Chat:</strong> Available 24/7 on our website
-          </li>
-        </ul>
-        <h4 data-aos="fade-up" data-aos-duration="500">Follow Us</h4>
-        <p data-aos="fade-up" data-aos-duration="600">
-          Stay updated on the latest features, tips, and community stories:
-        </p>
-        <ul data-aos="fade-left" data-aos-duration="600">
-          <li>
-            Instagram
-            <img
-              src="/Public/Images/insta icon.png"
-              alt="instagram icon"
-              class="img"
-            />| X
-            <img src="/Public/Images/x icon.png" alt="X icon" class="img" />|
-            Facebook
-            <img
-              src="/Public/Images/fb icon.png"
-              alt="facebook icon"
-              class="img"
-            />
-          </li>
-        </ul>
-      </div>
-    </section>
+    </div>
 
     <!-- FOOTER -->
     <div class="footer-container">
@@ -249,19 +217,39 @@
               <h5>COMPANY</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Home</a>
+                  <a
+                    href="#"
+                    class="nav-link p-0"
+                    onclick="window.location.href='/home'"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Features</a>
+                  <a
+                    href="#"
+                    class="nav-link p-0"
+                    onclick="window.location.href='/about'"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href="#"
+                    class="nav-link p-0"
+                    onclick="window.location.href='/services'"
+                    >Services</a
+                  >
                 </li>
                 <li class="nav-item mb-2">
                   <a href="#" class="nav-link p-0">Reviews</a>
                 </li>
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">About Us</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Services</a>
+                  <a
+                    href="#"
+                    class="nav-link p-0"
+                    onclick="window.location.href='/support'"
+                    >Support Center</a
+                  >
                 </li>
               </ul>
             </div>
@@ -270,7 +258,12 @@
               <h5>SHOP</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Products</a>
+                  <a
+                    href="#"
+                    class="nav-link p-0"
+                    onclick="window.location.href='/products'"
+                    >Products</a
+                  >
                 </li>
               </ul>
             </div>
@@ -376,15 +369,6 @@
             "<i class='bx bx-sun'></i>";
         }
       };
-
-      function redirectToDashboard() {
-  const currentUser = sessionStorage.getItem('currentUser');
-  if (currentUser) {
-    window.location.href = '/dashboard';
-  } else {
-    window.location.href = '/login';
-  }
-}
     </script>
   </body>
 </html>

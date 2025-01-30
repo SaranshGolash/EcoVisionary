@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  background-color: #E9ECEF;
+  font-family: "Noto Sans", serif;
+}
+
+/* Theme Toggle */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode .nav-link {
+  color: #ffffff;
+}
+header {
+  background-image: linear-gradient(to left, #C2FFC7, #55cb51);
+}
+body.dark-mode header {
+  background-image: linear-gradient(to left, #7cf687, #41bc3d); /* Dark mode gradient */
+}
+.nav-link {
+  color: #000000;
+}
+#darkModeToggle{
+  border: 2px solid;
+  border-radius: 100px;
+  background: transparent;
+}
+
+body.dark-mode .footer-container {
+  background-image: linear-gradient(to left, #7cf687, #41bc3d);
+}
+
+body.dark-mode .footer-container li>a {
+  color: #000000;
+}
+/* Nav-Bar styling */
+header{
+  background-image: linear-gradient(to left, #C2FFC7, #55cb51);
+}
+#navBarList {
+  font-weight: 500;
+  color: rgb(43, 42, 42);
+}
+.nav-link:hover{
+  color: #fff !important;
+}
+.nav-link li>a:active{
+  color: #fff;
+}
+
+.checkout-container {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.form-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+    overflow: hidden;
+}
+
+.form-header {
+    background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px 15px 0 0;
+}
+
+.form-body {
+    padding: 2rem;
+}
+
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.required-field::after {
+    content: "*";
+    color: #dc3545;
+    margin-left: 4px;
+}
+
+.form-text {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    .checkout-container {
+        margin: 20px;
+    }
+    
+    .form-header, .form-body {
+        padding: 1.5rem;
+    }
+}

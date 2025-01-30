@@ -25,7 +25,8 @@ body.dark-mode header {
 }
 #darkModeToggle{
   border: 2px solid;
-  border-radius: 50px;
+  border-radius: 100px;
+  background: transparent;
 }
 
 body.dark-mode .footer-container {
@@ -86,7 +87,6 @@ header{
   color: white; /* Text color */
   margin-bottom: 20px;
 }
-
 /* Carousel Heading style */
 
 .car-text {

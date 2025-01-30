@@ -8,7 +8,10 @@
       href="../Public/Images/xml.png"
       type="image/svg+xml"
     />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
@@ -94,39 +97,35 @@
         </li>
       </ul>
 
-      <div class="col-md-3 text-end">
+      <div class="buttons col-md-3 text-end me-5">
         <button
           type="button"
-          class="btn btn-darkmode-toggle"
+          class="btn-darkmode-toggle"
           id="darkModeToggle"
           onclick="toggleDarkMode()"
         >
           <i class="bx bx-moon"></i>
         </button>
-        <button
-          type="button"
-          class="btn btn-login me-2"
-          id="login"
-          onclick="window.location.href='/login'"
-        >
-          Login
-        </button>
-        <button
-          type="button"
-          class="btn btn-signUp me-5"
-          id="signUp"
-          onclick="window.location.href='/signUp'"
-        >
-          Sign-up
-        </button>
+        <a href="#" onclick="window.location.href='/cart'"
+          ><img
+            src="../Public/Images/cart.png"
+            alt=""
+            width="45px"
+            style="margin-bottom: 5px; margin-left: 5px"
+        /></a>
+        <a href="#" onclick="redirectToDashboard()"
+          ><img
+            src="../Public/Images/user-icon.png"
+            alt=""
+            width="30px"
+            style="margin-bottom: 5px; margin-left: 5px"
+        /></a>
       </div>
     </header>
 
     <!-- Main Body -->
     <div class="px-4 pt-5 my-5 text-center">
-      <h1 class="display-4 fw-bold">
-        Services Offered by Us
-      </h1>
+      <h1 class="display-4 fw-bold">Services Offered by Us</h1>
       <div class="col-lg-6 mx-auto">
         <p class="lead mb-4" data-aos="fade-right" data-aos-duration="500">
           We are dedicated to providing comprehensive waste management solutions
@@ -137,7 +136,11 @@
         </p>
       </div>
       <div class="overflow-hidden" style="max-height: 50vh">
-        <div class="container px-5" data-aos="fade-left" data-aos-duration="500">
+        <div
+          class="container px-5"
+          data-aos="fade-left"
+          data-aos-duration="500"
+        >
           <video
             src="../Public/Images/Shipper goes to deliver goods.mp4"
             width="700"
@@ -181,7 +184,12 @@
           Featured Artist
         </h3>
         <div class="artist-card">
-          <div class="card" style="width: 18rem" data-aos="fade-left" data-aos-duration="500">
+          <div
+            class="card"
+            style="width: 18rem"
+            data-aos="fade-left"
+            data-aos-duration="500"
+          >
             <img
               src="../Public/Images/product1.jpg"
               class="card-img-top"
@@ -198,7 +206,12 @@
               <p class="artist">~ Ron</p>
             </div>
           </div>
-          <div class="card" style="width: 18rem" data-aos="fade-left" data-aos-duration="600">
+          <div
+            class="card"
+            style="width: 18rem"
+            data-aos="fade-left"
+            data-aos-duration="600"
+          >
             <img
               src="../Public/Images/product2.jpeg"
               class="card-img-top"
@@ -208,13 +221,18 @@
               <p class="card-text">Handpainted Glass Bottle</p>
               <p class="meta-desc">
                 A handpainted glass bottle is an artistic container adorned with
-                unique designs by Emily. It serves as a decorative
-                piece, adding a touch of elegance and personalized charm to any space.
+                unique designs by Emily. It serves as a decorative piece, adding
+                a touch of elegance and personalized charm to any space.
               </p>
               <p class="artist">~ Emily</p>
             </div>
           </div>
-          <div class="card" style="width: 18rem" data-aos="fade-left" data-aos-duration="700">
+          <div
+            class="card"
+            style="width: 18rem"
+            data-aos="fade-left"
+            data-aos-duration="700"
+          >
             <img
               src="../Public/Images/product3.jpeg"
               class="card-img-top"
@@ -231,7 +249,12 @@
               <p class="artist">~ Mark</p>
             </div>
           </div>
-          <div class="card" style="width: 18rem" data-aos="fade-left" data-aos-duration="800">
+          <div
+            class="card"
+            style="width: 18rem"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
             <img
               src="../Public/Images/product4.jpg"
               class="card-img-top"
@@ -248,7 +271,12 @@
               <p class="artist">~ Zuck</p>
             </div>
           </div>
-          <div class="card" style="width: 18rem" data-aos="fade-left" data-aos-duration="800">
+          <div
+            class="card"
+            style="width: 18rem"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
             <img
               src="../Public/Images/product7.jpeg"
               class="card-img-top"
@@ -257,7 +285,10 @@
             <div class="card-body">
               <p class="card-text">Wooden Tray</p>
               <p class="meta-desc">
-                A beautifully arranged wooden tray holding various small plants in colorful, patterned mugs and cups. The creative use of everyday items as planters adds a unique, vibrant touch to indoor gardening, with beautiful design.
+                A beautifully arranged wooden tray holding various small plants
+                in colorful, patterned mugs and cups. The creative use of
+                everyday items as planters adds a unique, vibrant touch to
+                indoor gardening, with beautiful design.
               </p>
               <p class="artist">~ Sid</p>
             </div>
@@ -394,11 +425,16 @@
               font-weight: bold;
               letter-spacing: 2px;
             "
-            data-aos="fade-up" data-aos-duration="600"
+            data-aos="fade-up"
+            data-aos-duration="600"
           >
             Join us now and start selling!
           </h2>
-          <div style="margin-top: 20px" data-aos="fade-up" data-aos-duration="700">
+          <div
+            style="margin-top: 20px"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
             <button
               id="start-selling-btn"
               style="
@@ -441,8 +477,10 @@
         max-width: 600px;
       "
     >
-      <h2 style="text-align: center; color: #000; margin-bottom: 10px;">Contact Us</h2>
-      <form id="contact-form" style="color: #000;">
+      <h2 style="text-align: center; color: #000; margin-bottom: 10px">
+        Contact Us
+      </h2>
+      <form id="contact-form" style="color: #000">
         <div style="display: flex; gap: 10px">
           <div style="flex: 1">
             <label for="name">Name:</label><br />
@@ -627,8 +665,11 @@
         text-align: center;
       "
     >
-      <h2 style="color: #000; font-weight: bold;">Thanks for using our Site!</h2>
-      <p style="color: #000;">Your information has been submitted successfully. You will receive a call from our side shortly.</p>
+      <h2 style="color: #000; font-weight: bold">Thanks for using our Site!</h2>
+      <p style="color: #000">
+        Your information has been submitted successfully. You will receive a
+        call from our side shortly.
+      </p>
       <button
         type="button"
         id="close-thank-you-btn"
@@ -655,13 +696,36 @@
         Follow Our Community
       </h3>
 
-      <div style="margin-left: 50px;">
+      <div style="margin-left: 50px">
         <ul class="d-flex gap-3 list-unstyled">
-          <li><a href="#"><img src="../Public/Images/telegram.png" alt="" width="30px">Telegram</a></li>
-          <li><a href="#"><img src="../Public/Images/x icon.png" alt="" width="30px">X</a></li>
-          <li><a href="#"><img src="../Public/Images/wiki.jpg" alt="" width="25px" style="border-radius: 20px;">Wikipedia</a></li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Public/Images/telegram.png"
+                alt=""
+                width="30px"
+              />Telegram</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="../Public/Images/x icon.png" alt="" width="30px" />X</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Public/Images/wiki.jpg"
+                alt=""
+                width="25px"
+                style="border-radius: 20px"
+              />Wikipedia</a
+            >
+          </li>
         </ul>
-        <p style="color: rgb(86, 85, 85);">Explore the links for the Educational Resources.</p>
+        <p style="color: rgb(86, 85, 85)">
+          Explore the links for the Educational Resources.
+        </p>
       </div>
     </div>
 
@@ -673,55 +737,91 @@
       >
         Read Articles
       </h3>
-      <div style="margin-left: 49px;">
-        <p style="color: rgb(86, 85, 85);">Read Articles / Blogs regarding to Environmental Issues.</p>
+      <div style="margin-left: 49px">
+        <p style="color: rgb(86, 85, 85)">
+          Read Articles / Blogs regarding to Environmental Issues.
+        </p>
       </div>
       <div class="row mb-2">
         <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block text-primary-emphasis">World</strong>
+              <strong class="d-inline-block text-primary-emphasis"
+                >World</strong
+              >
               <h3 class="mb-0">Climate Change</h3>
               <div class="mb-1 text-body-secondary">Nov 12</div>
-              <p class="card-text mb-auto" style="font-size: 15px;">Climate change refers to changes in the Earth’s climates, at local, regional....</p>
-              <a href="https://studentenergy.org/influencer/climate-change/?gad_source=1" class="icon-link gap-1 icon-link-hover stretched-link">
+              <p class="card-text mb-auto" style="font-size: 15px">
+                Climate change refers to changes in the Earth’s climates, at
+                local, regional....
+              </p>
+              <a
+                href="https://studentenergy.org/influencer/climate-change/?gad_source=1"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
                 Continue reading
                 <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
               </a>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img src="https://studentenergy.org/site/assets/uploads/2020/06/Climate.Nasa_.Gov-Concentration-of-CO2-1-768x480.jpg" alt="" width="200" height="250">
+              <img
+                src="https://studentenergy.org/site/assets/uploads/2020/06/Climate.Nasa_.Gov-Concentration-of-CO2-1-768x480.jpg"
+                alt=""
+                width="200"
+                height="250"
+              />
             </div>
           </div>
         </div>
         <div class="col-md-6" data-aos="fade-right" data-aos-duration="600">
-          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
             <div class="col p-4 d-flex flex-column position-static">
-              <strong class="d-inline-block text-success-emphasis">Environment</strong>
+              <strong class="d-inline-block text-success-emphasis"
+                >Environment</strong
+              >
               <h3 class="mb-0">Pollution</h3>
               <div class="mb-1 text-body-secondary">Nov 11</div>
-              <p class="mb-4">Know about the environmental pollution and it's effect on earth...</p>
-              <a href="https://kids.britannica.com/students/article/environmental-pollution/276492" class="icon-link gap-1 icon-link-hover stretched-link">
+              <p class="mb-4">
+                Know about the environmental pollution and it's effect on
+                earth...
+              </p>
+              <a
+                href="https://kids.britannica.com/students/article/environmental-pollution/276492"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
                 Continue reading
                 <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
               </a>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img src="https://cdn.britannica.com/31/138931-050-F91CF403.jpg" alt="" width="200" height="250">
+              <img
+                src="https://cdn.britannica.com/31/138931-050-F91CF403.jpg"
+                alt=""
+                width="200"
+                height="250"
+              />
             </div>
           </div>
         </div>
       </div>
       <div
-          class="d-grid gap-2 d-md-flex justify-content-md-center mb-5 my-2 me-3"
+        class="d-grid gap-2 d-md-flex justify-content-md-center mb-5 my-2 me-3"
+      >
+        <button
+          type="button"
+          class="btn btn-primary btn-lg px-4 me-5 border-success"
         >
-          <button
-            type="button"
-            class="btn btn-primary btn-lg px-4 me-5 border-success"
+          <a
+            href="https://www.google.com/search?q=articles+about+environment+issues&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQsxMjcyMDY2ajBqMagCCLACAQ&sourceid=chrome&ie=UTF-8"
+            style="text-decoration: none; color: aliceblue; font-weight: bold"
+            >Read More</a
           >
-            <a href="https://www.google.com/search?q=articles+about+environment+issues&oq=&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxjCAzIJCAAQRRg7GMIDMgkIARBFGDsYwgMyCQgCEEUYOxjCAzIJCAMQRRg7GMIDMgkIBBBFGDsYwgMyCQgFEEUYOxjCAzIJCAYQRRg7GMIDMgkIBxBFGDsYwgPSAQsxMjcyMDY2ajBqMagCCLACAQ&sourceid=chrome&ie=UTF-8" style="text-decoration: none; color: aliceblue; font-weight: bold;">Read More</a>
-          </button>
-        </div>
+        </button>
+      </div>
     </div>
 
     <!-- FOOTER -->
@@ -901,6 +1001,15 @@
             "<i class='bx bx-sun'></i>";
         }
       };
+
+      function redirectToDashboard() {
+  const currentUser = sessionStorage.getItem('currentUser');
+  if (currentUser) {
+    window.location.href = '/dashboard';
+  } else {
+    window.location.href = '/login';
+  }
+}
     </script>
   </body>
 </html>

@@ -57,7 +57,7 @@
             href="#"
             class="nav-link px-2 active"
             id="navBarList"
-            onclick="window.location.href='/home'"
+            onclick="window.location.href='/'"
             >Home</a
           >
         </li>
@@ -99,62 +99,46 @@
         </li>
       </ul>
 
-      <div class="col-md-3 text-end">
+      <div class="buttons col-md-3 text-end me-5">
         <button
           type="button"
-          class="btn btn-darkmode-toggle"
+          class="btn-darkmode-toggle"
           id="darkModeToggle"
           onclick="toggleDarkMode()"
         >
           <i class="bx bx-moon"></i>
         </button>
-        <button
-          type="button"
-          class="btn btn-login me-2"
-          id="login"
-          onclick="window.location.href='/login'"
-        >
-          Login
-        </button>
-        <button
-          type="button"
-          class="btn btn-signUp me-5"
-          id="signUp"
-          onclick="window.location.href='/signUp'"
-        >
-          Sign-up
-        </button>
+        <a href="#" onclick="window.location.href='/cart'"
+          ><img
+            src="../Public/Images/cart.png"
+            alt=""
+            width="45px"
+            style="margin-bottom: 5px; margin-left: 5px"
+        /></a>
+        <a href="#" onclick="window.location.href='/login'"
+          ><img
+            src="../Public/Images/user-icon.png"
+            alt=""
+            width="30px"
+            style="margin-bottom: 5px; margin-left: 5px"
+        /></a>
       </div>
     </header>
 
     <div class="container my-5">
-      <h1 class="heading">Sign Up</h1>
-      <div class="form-container">
-        <input
-          type="text"
-          id="username"
-          placeholder="Username"
-          class="input-field"
-        />
-        <input
-          type="password"
-          id="password"
-          placeholder="Password"
-          class="input-field"
-        />
-        <input
-          type="password"
-          id="confirm-password"
-          placeholder="Re-Enter Password"
-          class="input-field"
-        />
+      <h1 class="heading" style="color: rgb(124, 124, 124);">SignUp</h1>
+      <form id="signupForm" class="form-container">
+        <input type="text" name="username" id="signupUsername" placeholder="Enter your Username" class="input-field" required>
+        <input type="email" name="email" id="signupEmail" placeholder="Enter your Email" class="input-field" required>
+        <input type="password" name="password" id="signupPassword" placeholder="Password" class="input-field" required>
+        <p style="color: rgb(41, 40, 40)">
+          Already have an account?
+          <a href="#" onclick="window.location.href='/login'">Login</a>
+        </p>
         <div class="btn">
-          <button class="retro-button">Confirm</button>
-          <button id="retro-button" class="retro-button" onclick="window.location.href='/login'">Log In</button>
+          <input type="submit" class="retro-button" value="Confirm">
         </div>
-        <h4>or</h4>
-        <button class="retro-button">Sign Up with Google</button>
-      </div>
+      </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -183,6 +167,19 @@
             "<i class='bx bx-sun'></i>";
         }
       };
+
+      document.getElementById('signupForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const username = document.getElementById('signupUsername').value;
+  const email = document.getElementById('signupEmail').value;
+  const password = document.getElementById('signupPassword').value;
+
+  if (username && email && password) {
+    sessionStorage.setItem('user_' + username, JSON.stringify({username: username, email: email, password: password}));
+    alert('Signup successful!');
+    window.location.href = '/login';  // Redirect to login page after signup
+  }
+});
     </script>
   </body>
 </html>

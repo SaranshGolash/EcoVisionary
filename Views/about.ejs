@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EcoVisionary</title>
-    <link rel="shortcut icon" href="../Public/Images/xml.png" type="image/svg+xml">
+    <link
+      rel="shortcut icon"
+      href="../Public/Images/xml.png"
+      type="image/svg+xml"
+    />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -94,31 +98,29 @@
         </li>
       </ul>
 
-      <div class="col-md-3 text-end">
+      <div class="buttons col-md-3 text-end me-5">
         <button
           type="button"
-          class="btn btn-darkmode-toggle"
+          class="btn-darkmode-toggle"
           id="darkModeToggle"
           onclick="toggleDarkMode()"
         >
           <i class="bx bx-moon"></i>
         </button>
-        <button
-          type="button"
-          class="btn btn-login me-2"
-          id="login"
-          onclick="window.location.href='/login'"
-        >
-          Login
-        </button>
-        <button
-          type="button"
-          class="btn btn-signUp me-5"
-          id="signUp"
-          onclick="window.location.href='/signUp'"
-        >
-          Sign-up
-        </button>
+        <a href="#" onclick="window.location.href='/cart'"
+          ><img
+            src="../Public/Images/cart.png"
+            alt=""
+            width="45px"
+            style="margin-bottom: 5px; margin-left: 5px"
+        /></a>
+        <a href="#" onclick="redirectToDashboard()" 
+          ><img
+            src="../Public/Images/user-icon.png"
+            alt=""
+            width="30px"
+            style="margin-bottom: 5px; margin-left: 5px"
+        /></a>
       </div>
     </header>
 
@@ -412,25 +414,36 @@
       AOS.init();
 
       const toggleDarkMode = () => {
-      const body = document.body;
-      body.classList.toggle('dark-mode');
-      const toggleButton = document.getElementById('darkModeToggle');
-      if(body.classList.contains('dark-mode')) {
-        toggleButton.innerHTML = "<i class='bx bx-sun'></i>";
-        localStorage.setItem('theme', 'dark');
-      } else {
-        toggleButton.innerHTML = "<i class='bx bx-moon'></i>";
-        localStorage.setItem('theme', 'light')
-      }
-    };
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+        const toggleButton = document.getElementById("darkModeToggle");
+        if (body.classList.contains("dark-mode")) {
+          toggleButton.innerHTML = "<i class='bx bx-sun'></i>";
+          localStorage.setItem("theme", "dark");
+        } else {
+          toggleButton.innerHTML = "<i class='bx bx-moon'></i>";
+          localStorage.setItem("theme", "light");
+        }
+      };
 
-    window.onload = () => {
-      const savedTheme = localStorage.getItem('theme')
-      if(savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        document.getElementById('darkModeToggle').innerHTML = "<i class='bx bx-sun'></i>";
-      }
-    };
+      window.onload = () => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.body.classList.add("dark-mode");
+          document.getElementById("darkModeToggle").innerHTML =
+            "<i class='bx bx-sun'></i>";
+        }
+      };
+
+      // Redirect to dashboard or login based on user's login state
+function redirectToDashboard() {
+  const currentUser = sessionStorage.getItem('currentUser');
+  if (currentUser) {
+    window.location.href = '/dashboard';
+  } else {
+    window.location.href = '/login';
+  }
+}
     </script>
   </body>
 </html>
