@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 // Home Page Route
 
 app.get("/", async (req, res) => {
-  res.render("index.ejs");
+  res.render("index");
 });
 
 // Cart Page Route
