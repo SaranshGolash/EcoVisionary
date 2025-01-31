@@ -170,3 +170,26 @@ h3 {
   margin-top: 25px;
   margin-left: 42px;
 }
+
+@media (min-width: 380px) and (max-width: 475px) {
+
+  body {
+    min-width: 380px;
+    max-width: 475px;
+  }
+  #navBar {
+    width: 380px;
+  }
+  .about-body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    width: 380px;
+  }
+  ol {
+    width: 360px;
+  }
+}

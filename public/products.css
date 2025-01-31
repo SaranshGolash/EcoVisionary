@@ -272,3 +272,23 @@ header {
     flex: 1;
   }
 }
+
+@media (min-width: 380px) and (max-width: 475px) {
+
+  body {
+    min-width: 380px;
+    max-width: 475px;
+  }
+  #navBar {
+    width: 380px;
+  }
+  .main-img {
+  right: 10%;
+  bottom: -30%;
+  width: 320px;
+  height: 640px;
+  background-color: #333;
+  border-radius: 25px;
+  transform: rotate(30deg);
+  }
+}

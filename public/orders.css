@@ -148,3 +148,17 @@ body{
     margin-top: 25px;
     margin-left: 42px;
   }
+
+  @media (min-width: 380px) and (max-width: 475px) {
+
+    body {
+      min-width: 380px;
+      max-width: 475px;
+    }
+    #navBar {
+      width: 380px;
+    }
+    .main-container {
+      padding-left: 0px;
+    }
+  }
