@@ -9,7 +9,7 @@ app.use("/Public", express.static(path.join(__dirname, "public")));
 
 // views engine
 
-app.set('views', './views');
+app.set("views", path.join(__dirname, "views"));
 app.set('view engine', 'ejs');
 
 // Home Page Route
