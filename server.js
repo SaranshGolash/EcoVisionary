@@ -80,7 +80,7 @@ app.get("/services", async (req, res) => {
 // Home Page Route
 
 app.get("/home", async (req, res) => {
-  res.render("index.ejs");
+  res.render("index");
 });
 
 app.listen(port, () => {
