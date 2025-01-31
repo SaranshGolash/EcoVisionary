@@ -184,6 +184,11 @@ header{
 
 /* Media Queries */
 @media (min-width: 380px) and (max-width: 475px) {
+
+  body {
+    min-width: 380px;
+    max-width: 475px;
+  }
   #navBar {
     width: 380px;
   }
