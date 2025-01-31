@@ -181,3 +181,21 @@ header{
   margin-top: 25px;
   margin-left: 42px;
 }
+
+/* Media Queries */
+@media (min-width: 380px) and (max-width: 475px) {
+  #navBar {
+    width: 380px;
+  }
+
+  #user-review {
+    display: flex;
+    flex-flow: column wrap;
+    width: 380px;
+  }
+
+  #btn-user-review{
+    width: 180px;
+    margin-left: 44%;
+  }
+}
