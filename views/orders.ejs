@@ -30,12 +30,12 @@
     />
     <link rel="stylesheet" href="../public/orders.css" />
   </head>
-  <body>
+  <body onload="retrieveOrderDetails()">
     <!-- NAVBAR -->
     <header class="navbar navbar-expand-md navbar-light bg-light d-flex align-items-center justify-content-between py-3" id="navBar">
-      <div class="d-flex align-items-center col-6 col-md-3 mb-2 mb-md-0 ms-5">
+      <div class="img-d d-flex align-items-center col-6 col-md-3 mb-2 mb-md-0 ms-5">
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png" alt="" width="100" height="auto" />
+          <img src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png" alt="" width="100" height="auto" class="logo"/>
         </a>
       </div>
     
@@ -51,7 +51,7 @@
         </a>
       </div>
     
-      <div class="collapse navbar-collapse ms-5" id="navbarNav">
+      <div class="collapse navbar-collapse ms-4" id="navbarNav">
         <ul class="nav flex-column flex-md-row justify-content-center" id="nav-links">
           <li class="nav-item">
             <a href="#" class="nav-link nav-link-custom px-2 active" id="navBarList" onclick="window.location.href='/home'">Home</a>
@@ -91,37 +91,67 @@
     
 
     <!-- Main Body -->
+      <div class="main-container container mt-5">
+        <div class="mini-header d-flex justify-content-between align-items-center">
+          <h6><a href="/dashboard" class="text-muted">Your account</a></h6>
+          <h6><span class="text-muted">></span> <a href="#" class="text-muted">Your orders</a></h6>
+        </div>
+        <div class="sub-header d-flex justify-content-between align-items-center my-3">
+          <h3 class="font-weight-bold">Track Your Order</h3>
+        </div>
+        <div class="below-sub-header d-flex justify-content-around my-3">
+          <h5><a href="#" class="text-primary">Orders</a></h5>
+          <h5><a href="#" class="text-primary">Buy Again</a></h5>
+          <h5><a href="#" class="text-primary">Not Yet Shipped</a></h5>
+          <h5><a href="#" class="text-primary">Cancelled Orders</a></h5>
+        </div>
+        <div class="order-details my-3" id="orderDetails">
+          <h5>Order #<span id="orderId">123456789</span></h5>
+          <p>Placed on: <span id="orderDate">10 January 2025</span></p>
+          <p>Estimated Delivery: <span id="deliveryDate">15 February 2025</span></p>
+        </div>
+        <div class="progress mb-4" id="progressContainer">
+          <div id="progressBar" class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">Order Placed</div>
+        </div>
+        <div class="tracking-details mb-4" id="trackingDetails">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Order Placed
+              <span class="badge badge-success badge-pill" id="statusPlaced">Pending</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Order Processed
+              <span class="badge badge-secondary badge-pill" id="statusProcessed">Pending</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              In Transit
+              <span class="badge badge-secondary badge-pill" id="statusTransit">Pending</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Out for Delivery
+              <span class="badge badge-secondary badge-pill" id="statusOutForDelivery">Pending</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Delivered
+              <span class="badge badge-secondary badge-pill" id="statusDelivered">Pending</span>
+            </li>
+          </ul>
+        </div>
+        <div class="drop-list my-3">
+          <select class="form-control">
+            <option value="last30days">Last 30 days</option>
+            <option value="last1month">Last 1 month</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+          </select>
+        </div>
+      </div>
 
-    <div class="main-container">
-        <div class="mini-header">
-            <h6><a href="/dashboard">Your account</a></h6>
-            <h6> > <a href="#">Your orders</a></h6>
-        </div>
-        <div class="sub-header">
-            <h3>Your Orders</h3>
-            <input type="search" id="gsearch" name="gsearch" placeholder="Search orders" style="padding-right: 40px;">
-            <button id="btn-search">Search orders</button>
-        </div>
-        <div class="below-sub-header">
-            <h5><a href="#">Orders</a></h5>
-            <h5><a href="#">Buy Again</a></h5>
-            <h5><a href="#">Not Yet Shipped</a></h5>
-            <h5><a href="#">Cancelled Orders</a></h5>
-        </div>
-        <div class="drop-list">
-            <select>
-                <option value="last30days">Last 30 days</option>
-                <option value="last1month">Last 1 month</option>
-                <option value="2025">2025</option>
-                <option value="2024">2024</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-            </select>
-        </div>
-    </div>
 
      <!-- FOOTER -->
      <div class="footer-container">
@@ -272,35 +302,113 @@
       };
       
 
-      document.getElementById("start-selling-btn").onclick = function () {
-        document.getElementById("floating-form").style.display = "block";
-        setTimeout(function () {
-          document.getElementById("floating-form").style.transform =
-            "translate(-50%, -50%) scale(1)";
-        }, 10);
-      };
+     // Generate a random order ID
+function generateOrderId() {
+  return Math.floor(Math.random() * 1000000000).toString();
+}
 
-      document.getElementById("close-form-btn").onclick = function () {
-        document.getElementById("floating-form").style.transform =
-          "translate(-50%, -50%) scale(0)";
-        setTimeout(function () {
-          document.getElementById("floating-form").style.display = "none";
-        }, 300);
-      };
+// Set order details on checkout
+function setOrderDetails() {
+  const orderId = generateOrderId();
+  const orderDate = new Date().toLocaleDateString('en-GB', {
+    day: 'numeric', month: 'long', year: 'numeric'
+  });
 
-      document.getElementById("contact-form").onsubmit = function (event) {
-        event.preventDefault();
-        document.getElementById("loading-indicator").style.display = "block";
-        document.getElementById("floating-form").style.display = "none";
-        setTimeout(function () {
-          document.getElementById("thank-you-message").style.display = "block";
-          document.getElementById("loading-indicator").style.display = "none";
-        }, 1000);
-      };
+  sessionStorage.setItem('orderId', orderId);
+  sessionStorage.setItem('orderDate', orderDate);
+  window.location.href = 'order.html';
+}
 
-      document.getElementById("close-thank-you-btn").onclick = function () {
-        document.getElementById("thank-you-message").style.display = "none";
-      };
+// Simulate order progress
+function simulateOrderProgress(daysElapsed, deliveryDays) {
+  const progressBar = document.getElementById('progressBar');
+  const statusPlaced = document.getElementById('statusPlaced');
+  const statusProcessed = document.getElementById('statusProcessed');
+  const statusTransit = document.getElementById('statusTransit');
+  const statusOutForDelivery = document.getElementById('statusOutForDelivery');
+  const statusDelivered = document.getElementById('statusDelivered');
+
+  const totalStages = 5;
+  const stageDuration = deliveryDays / totalStages;
+  let progress = Math.min((daysElapsed / deliveryDays) * 100, 100);
+
+  function updateProgressBar() {
+    if (progress >= 100) {
+      progressBar.textContent = 'Order Delivered';
+      statusDelivered.textContent = 'Completed';
+      statusDelivered.className = 'badge badge-success badge-pill';
+      clearInterval(progressInterval);
+      return;
+    }
+
+    progressBar.style.width = `${progress}%`;
+    progressBar.setAttribute('aria-valuenow', progress);
+
+    if (progress < 20) {
+      progressBar.textContent = 'Order Placed';
+      statusPlaced.textContent = 'Completed';
+      statusPlaced.className = 'badge badge-success badge-pill';
+    } else if (progress < 40) {
+      progressBar.textContent = 'Order Processed';
+      statusProcessed.textContent = 'Completed';
+      statusProcessed.className = 'badge badge-success badge-pill';
+    } else if (progress < 60) {
+      progressBar.textContent = 'In Transit';
+      statusTransit.textContent = 'Completed';
+      statusTransit.className = 'badge badge-success badge-pill';
+    } else if (progress < 80) {
+      progressBar.textContent = 'Out for Delivery';
+      statusOutForDelivery.textContent = 'Completed';
+      statusOutForDelivery.className = 'badge badge-success badge-pill';
+    } else {
+      progressBar.textContent = 'Order Delivered';
+      statusDelivered.textContent = 'Completed';
+      statusDelivered.className = 'badge badge-success badge-pill';
+    }
+  }
+
+  const progressInterval = setInterval(() => {
+    daysElapsed += stageDuration;
+    progress = Math.min((daysElapsed / deliveryDays) * 100, 100);
+    updateProgressBar();
+  }, 2000);
+
+  updateProgressBar();
+}
+
+// Retrieve order details from local storage
+function retrieveOrderDetails() {
+  const orderId = sessionStorage.getItem('orderId');
+  const orderDate = sessionStorage.getItem('orderDate');
+  const currentDate = new Date();
+  const placedDate = new Date(orderDate);
+  const daysElapsed = (currentDate - placedDate) / (1000 * 60 * 60 * 24);
+  const deliveryDays = 10;
+  const deliveryDate = new Date(placedDate.getTime() + deliveryDays * 24 * 60 * 60 * 1000);
+  const formattedDeliveryDate = deliveryDate.toLocaleDateString('en-GB', {
+    day: 'numeric', month: 'long', year: 'numeric'
+  });
+
+  if (orderId && orderDate) {
+    document.getElementById('orderId').textContent = orderId;
+    document.getElementById('orderDate').textContent = orderDate;
+    document.getElementById('deliveryDate').textContent = formattedDeliveryDate;
+    simulateOrderProgress(daysElapsed, deliveryDays);
+  } else {
+    document.getElementById('orderDetails').style.display = 'none';
+    document.getElementById('progressContainer').style.display = 'none';
+    document.getElementById('trackingDetails').style.display = 'none';
+    alert('No order details found.');
+  }
+}
+
+// Check if user is already logged in (Optional)
+window.onload = function () {
+  const currentUser = sessionStorage.getItem('currentUser');
+  if (currentUser && window.location.pathname.includes('dashboard.html')) {
+    displayUsername();
+  }
+};
 
       function redirectToDashboard() {
   const currentUser = sessionStorage.getItem('currentUser');
