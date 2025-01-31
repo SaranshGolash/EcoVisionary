@@ -34,9 +34,9 @@
   <body>
     <!-- NAVBAR -->
     <header class="navbar navbar-expand-md navbar-light bg-light d-flex align-items-center justify-content-between py-3" id="navBar">
-      <div class="d-flex align-items-center col-6 col-md-3 mb-2 mb-md-0 ms-5">
+      <div class="img-d d-flex align-items-center col-6 col-md-3 mb-2 mb-md-0 ms-5">
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png" alt="" width="100" height="auto" />
+          <img src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png" alt="" width="100" height="auto" class="logo"/>
         </a>
       </div>
     
@@ -52,7 +52,7 @@
         </a>
       </div>
     
-      <div class="collapse navbar-collapse ms-5" id="navbarNav">
+      <div class="collapse navbar-collapse ms-4" id="navbarNav">
         <ul class="nav flex-column flex-md-row justify-content-center" id="nav-links">
           <li class="nav-item">
             <a href="#" class="nav-link nav-link-custom px-2 active" id="navBarList" onclick="window.location.href='/home'">Home</a>
@@ -185,7 +185,7 @@
     <!-- HOME PAGE CONTENT -->
     <!-- Introduction -->
     <div
-      class="row flex-lg-row-reverse align-items-center g-2 py-5 w-60 ms-5 me-5"
+      class="introduc row flex-lg-row-reverse align-items-center g-2 py-5 w-60 ms-5 me-5"
     >
       <div
         class="col-5 col-sm-8 col-lg-6"
@@ -194,14 +194,14 @@
       >
         <img
           src="/Public/Images/transformation.jpeg"
-          class="d-block mx-lg-auto img-fluid"
+          class="d-block mx-lg-auto img-fluid trans"
           alt="Bootstrap Themes"
           width="700"
           height="500"
           loading="lazy"
         />
       </div>
-      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="600">
+      <div class="trans-text col-lg-6" data-aos="fade-right" data-aos-duration="600">
         <h1 class="display-6 fw-bold lh-1 mb-3">
           Transforming Waste-into-Wonders
         </h1>
@@ -225,7 +225,7 @@
     </div>
 
     <!-- FEATURES -->
-    <div class="container px-4 py-5" id="hanging-icons">
+    <div class="features-con container px-4 py-5" id="hanging-icons">
       <h2 class="pb-2 border-bottom border-success">Features</h2>
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div
@@ -365,7 +365,7 @@
     </div>
 
     <!-- SERVICES -->
-    <div class="container px-4 py-5">
+    <div class="service container px-4 py-5">
       <h2 class="pb-2 border-bottom border-success">Services Offered by Us</h2>
 
       <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
@@ -461,12 +461,12 @@
     </div>
 
     <!-- TESTIMONIALS -->
-    <div class="d-flex align-items-center justify-content-center">
-      <h2 class="mb-4 me-5">User Review</h2>
+    <div class=" d-flex align-items-center justify-content-center">
+      <h2 class="user mb-4 me-5">User Review</h2>
     </div>
     <h2 class="me-5 ms-5 mb-4 border-bottom border-success"></h2>
     <div
-      class="d-flex w-90 me-0 ms-5 mb-3"
+      class="testm d-flex w-90 me-0 ms-5 mb-3"
       data-aos="fade-up"
       data-aos-duration="500"
       id="user-review"
@@ -480,7 +480,7 @@
           alt="Placeholder"
         />
         <h2 class="fw-normal">Mr. Jhon Doe</h2>
-        <p>
+        <p class="textm">
           "I've been using EcoVisionary for a few months now, and I couldn't be
           happier with their services! The waste collection is always timely,
           and the team is incredibly professional. I love that they offer
@@ -498,7 +498,7 @@
           alt="Placeholder"
         />
         <h2 class="fw-normal">Isaac</h2>
-        <p>
+        <p class="textm">
           "EcoVisionary has completely transformed the way we manage waste in
           our community. Their educational workshops have raised awareness about
           sustainable practices, and their e-waste management service is
@@ -516,7 +516,7 @@
           alt="Placeholder"
         />
         <h2 class="fw-normal">Mrs. Ruby</h2>
-        <p>
+        <p class="textm">
           "I was initially skeptical about trying out a new waste management
           service, but EcoVisionary exceeded all my expectations. The smart
           waste management solutions have made the entire process so efficient
@@ -549,7 +549,7 @@
           />
         </a>
       </div>
-      <div class="container">
+      <div class="footer-main container">
         <footer class="py-5">
           <div class="row">
             <div class="col-6 col-md-2 mb-3">

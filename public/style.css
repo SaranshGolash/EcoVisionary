@@ -200,3 +200,111 @@ header{
   }
 }
 
+@media (min-width: 768px) {
+  .navbar-expand-md {
+    display: none;
+  }
+}
+
+@media (max-width: 406px) {
+  .img-d {
+    width: 10px;
+  }
+  .logo {
+    width: 70px;
+    height: auto;
+  }
+  .navbar-toggler{
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 769px) {
+  .car-text {
+    margin-top: 70px;
+    font-size: 60px;
+  }
+  .logo {
+    width: 70px;
+    height: auto;
+  }
+  .img-d {
+    width: 50px;
+  }
+  #navbarNav {
+    font-size: 13px;
+    margin-left: 50px;
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+}
+@media (min-width: 1000px) {
+  #navbarNav {
+    font-size: 17px;
+    margin-left: 50px;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1090px){
+  .car-text {
+    margin-top: 70px;
+    font-size: 60px;
+  }
+  .introduc {
+    width: 90%;
+  }
+}
+
+
+
+@media (max-width: 993px) {
+  .car-text {
+    margin-top: 70px;
+    font-size: 60px;
+  }
+  .introduc {
+    width: 90%;
+  }
+  .features-con {
+    width: 85%;
+  }
+  .service {
+    width: 85%;
+  }
+  .testm {
+    width: 85%;
+  }
+  .textm {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .user {
+    margin-left: 8%;
+  }
+  .footer-container {
+    padding: 40px;
+  } 
+  .footer-container a>.logo {
+    margin-left: 0;
+    margin-right: 50%;
+    width: 70px;
+    height: auto;
+  }
+}
+
+@media (min-width: 990px) {
+  .footer-main {
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 955px) {
+  .img-d {
+    width: 30px;
+  }
+}
