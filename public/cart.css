@@ -137,6 +137,24 @@ header{
   margin-left: 42px;
 }
 
+.nav-link-custom {
+  margin-top: 10px; /* Adjust as needed */
+  margin-left: 5px; /* Adjust as needed */
+}
+
+.d-md-none-except-user-icon {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .d-md-none-except-user-icon {
+    display: block;
+  }
+  .d-md-none-user {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
     .card-header {
         text-align: center;

@@ -182,25 +182,21 @@ header{
   margin-left: 42px;
 }
 
-/* Media Queries */
-@media (min-width: 380px) and (max-width: 475px) {
+.nav-link-custom {
+  margin-top: 10px; /* Adjust as needed */
+  margin-left: 5px; /* Adjust as needed */
+}
 
-  body {
-    min-width: 380px;
-    max-width: 475px;
-  }
-  #navBar {
-    width: 380px;
-  }
+.d-md-none-except-user-icon {
+  display: none;
+}
 
-  #user-review {
-    display: flex;
-    flex-flow: column wrap;
-    width: 380px;
+@media (max-width: 767.98px) {
+  .d-md-none-except-user-icon {
+    display: block;
   }
-
-  #btn-user-review{
-    width: 180px;
-    margin-left: 44%;
+  .d-md-none-user {
+    display: none;
   }
 }
+

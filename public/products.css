@@ -264,31 +264,22 @@ header {
 
 /* Extra utilities */
 
-.flex-equal > * {
-  flex: 1;
+
+.nav-link-custom {
+  margin-top: 10px; /* Adjust as needed */
+  margin-left: 5px; /* Adjust as needed */
 }
-@media (min-width: 768px) {
-  .flex-md-equal > * {
-    flex: 1;
+
+.d-md-none-except-user-icon {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .d-md-none-except-user-icon {
+    display: block;
+  }
+  .d-md-none-user {
+    display: none;
   }
 }
 
-@media (min-width: 380px) and (max-width: 475px) {
-
-  body {
-    min-width: 380px;
-    max-width: 475px;
-  }
-  #navBar {
-    width: 380px;
-  }
-  .main-img {
-  right: 10%;
-  bottom: -30%;
-  width: 320px;
-  height: 640px;
-  background-color: #333;
-  border-radius: 25px;
-  transform: rotate(30deg);
-  }
-}
