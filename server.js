@@ -31,6 +31,11 @@ app.get("/checkout", async(req,res)=> {
   res.render("checkout.ejs");
 });
 
+// Payment page route
+app.get("/payment", async(req, res)=> {
+  res.render("payment.ejs");
+})
+
 // Dashboard Page Route
 
 app.get("/dashboard", async(req, res)=> {

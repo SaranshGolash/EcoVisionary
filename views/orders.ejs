@@ -32,59 +32,141 @@
   </head>
   <body onload="retrieveOrderDetails()">
     <!-- NAVBAR -->
-    <header class="navbar navbar-expand-md navbar-light bg-light d-flex align-items-center justify-content-between py-3" id="navBar">
-      <div class="img-d d-flex align-items-center col-6 col-md-3 mb-2 mb-md-0 ms-5">
-        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png" alt="" width="100" height="auto" class="logo"/>
+    <header
+      class="navbar navbar-expand-md navbar-light bg-light d-flex align-items-center justify-content-between py-3"
+      id="navBar"
+    >
+      <div
+        class="img-d d-flex align-items-center col-6 col-md-3 mb-2 mb-md-0 ms-5"
+      >
+        <a
+          href="/"
+          class="d-inline-flex link-body-emphasis text-decoration-none"
+        >
+          <img
+            src="../Public/Images/Screenshot_2025-01-23_010224-removebg-preview.png"
+            alt=""
+            width="100"
+            height="auto"
+            class="logo"
+          />
         </a>
       </div>
-    
+
       <div class="d-flex align-items-center d-md-none me-3">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <i class="fa-solid fa-bars"></i>
         </button>
-        <button type="button" class="btn-darkmode-toggle ms-2" id="darkModeToggle" onclick="toggleDarkMode()">
+        <button
+          type="button"
+          class="btn-darkmode-toggle ms-2"
+          id="darkModeToggle"
+          onclick="toggleDarkMode()"
+        >
           <i class="bx bx-moon"></i>
         </button>
         <a href="#" onclick="window.location.href='/cart'">
-          <img src="../Public/Images/cart.png" alt="" width="45px" style="margin-bottom: 5px; margin-left: 5px" />
+          <img
+            src="../Public/Images/cart.png"
+            alt=""
+            width="45px"
+            style="margin-bottom: 5px; margin-left: 5px"
+          />
         </a>
       </div>
-    
+
       <div class="collapse navbar-collapse ms-4" id="navbarNav">
-        <ul class="nav flex-column flex-md-row justify-content-center" id="nav-links">
+        <ul
+          class="nav flex-column flex-md-row justify-content-center"
+          id="nav-links"
+        >
           <li class="nav-item">
-            <a href="#" class="nav-link nav-link-custom px-2 active" id="navBarList" onclick="window.location.href='/home'">Home</a>
+            <a
+              href="#"
+              class="nav-link nav-link-custom px-2 active"
+              id="navBarList"
+              onclick="window.location.href='/home'"
+              >Home</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link nav-link-custom px-2" id="navBarList" onclick="window.location.href='/about'">About Us</a>
+            <a
+              href="#"
+              class="nav-link nav-link-custom px-2"
+              id="navBarList"
+              onclick="window.location.href='/about'"
+              >About Us</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link nav-link-custom px-2" id="navBarList" onclick="window.location.href='/products'">Products</a>
+            <a
+              href="#"
+              class="nav-link nav-link-custom px-2"
+              id="navBarList"
+              onclick="window.location.href='/products'"
+              >Products</a
+            >
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link nav-link-custom px-2" id="navBarList" onclick="window.location.href='/services'">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link nav-link-custom px-2" id="navBarList" onclick="window.location.href='/support'">Support Center</a>
+            <a
+              href="#"
+              class="nav-link nav-link-custom px-2"
+              id="navBarList"
+              onclick="window.location.href='/services'"
+              >Services</a
+            >
           </li>
           <li class="nav-item d-md-none-except-user-icon">
-            <a href="#" class="nav-link nav-link-custom px-2" id="navBarList" onclick="redirectToDashboard()">
-              <img src="../Public/Images/user-icon.png" alt="" width="30px" style="margin-bottom: 5px; margin-left: 5px" />
+            <a
+              href="#"
+              class="nav-link nav-link-custom px-2"
+              id="navBarList"
+              onclick="redirectToDashboard()"
+            >
+              <img
+                src="../Public/Images/user-icon.png"
+                alt=""
+                width="30px"
+                style="margin-bottom: 5px; margin-left: 5px"
+              />
             </a>
           </li>
         </ul>
       </div>
-    
+
       <div class="d-none d-md-flex align-items-center me-5">
-        <button type="button" class="btn-darkmode-toggle" id="darkModeToggle" onclick="toggleDarkMode()">
+        <button
+          type="button"
+          class="btn-darkmode-toggle"
+          id="darkModeToggle"
+          onclick="toggleDarkMode()"
+        >
           <i class="bx bx-moon"></i>
         </button>
         <a href="#" onclick="window.location.href='/cart'">
-          <img src="../Public/Images/cart.png" alt="" width="45px" style="margin-bottom: 5px; margin-left: 5px" />
+          <img
+            src="../Public/Images/cart.png"
+            alt=""
+            width="45px"
+            style="margin-bottom: 5px; margin-left: 5px"
+          />
         </a>
         <a href="#" onclick="redirectToDashboard()">
-          <img src="../Public/Images/user-icon.png" alt="" width="30px" style="margin-bottom: 5px; margin-left: 5px" class="d-md-none-user" />
+          <img
+            src="../Public/Images/user-icon.png"
+            alt=""
+            width="30px"
+            style="margin-bottom: 5px; margin-left: 5px"
+            class="d-md-none-user"
+          />
         </a>
       </div>
     </header>

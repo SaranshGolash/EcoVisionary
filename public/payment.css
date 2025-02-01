@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  background-color: #E9ECEF;
+  font-family: "Noto Sans", serif;
+}
+
+/* Theme Toggle */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+.dark-mode .nav-link {
+  color: #ffffff;
+}
+header {
+  background-image: linear-gradient(to left, #C2FFC7, #55cb51);
+}
+body.dark-mode header {
+  background-image: linear-gradient(to left, #7cf687, #41bc3d); /* Dark mode gradient */
+}
+.nav-link {
+  color: #000000;
+}
+#darkModeToggle{
+  border: 2px solid;
+  border-radius: 100px;
+  background: transparent;
+}
+
+body.dark-mode .footer-container {
+  background-image: linear-gradient(to left, #7cf687, #41bc3d);
+}
+
+body.dark-mode .footer-container li>a {
+  color: #000000;
+}
+/* Nav-Bar styling */
+header{
+  background-image: linear-gradient(to left, #C2FFC7, #55cb51);
+}
+#navBarList {
+  font-weight: 500;
+  color: rgb(43, 42, 42);
+}
+.nav-link:hover{
+  color: #fff !important;
+}
+.nav-link li>a:active{
+  color: #fff;
+}
+#navbarNav {
+  font-size: 18px;
+}
+
+
+  .nav-link-custom {
+    margin-top: 10px; /* Adjust as needed */
+    margin-left: 5px; /* Adjust as needed */
+  }
+  
+  .d-md-none-except-user-icon {
+    display: none;
+  }
+  
+  @media (max-width: 767.98px) {
+    .d-md-none-except-user-icon {
+      display: block;
+    }
+    .d-md-none-user {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-expand-md {
+      display: none;
+    }
+  }
+  
+@media (max-width: 406px) {
+    .img-d {
+      width: 10px;
+    }
+    .logo {
+      width: 70px;
+      height: auto;
+    }
+    .navbar-toggler{
+      margin-right: 5px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .logo {
+      width: 70px;
+      height: auto;
+    }
+    .img-d {
+      width: 50px;
+    }
+    #navbarNav {
+      font-size: 13px;
+      margin-left: 50px;
+    }
+    .navbar-collapse {
+      flex-grow: 0;
+    }
+  }
+  @media (min-width: 1000px) {
+    #navbarNav {
+      font-size: 17px;
+      margin-left: 50px;
+    }
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+  }
+  
+  
+  @media (max-width: 1000px) {
+    .logo {
+      width: 80px;
+      height: auto;
+    }
+    .img-d {
+      width: 120px;
+    }
+    #navbarNav {
+      font-size: 13px;
+      margin-right: 50px;
+    }
+    .car-text-mid {
+      font-size: 50px;
+    }
+    .car-text-left {
+      font-size: 50px;
+    }
+    .car-text {
+      font-size: 50px;
+    }
+  }
+  

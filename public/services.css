@@ -71,27 +71,11 @@ header {
 .nav-link li > a:active {
   color: #fff;
 }
-
-#login {
-  background-color: #16742e;
-  color: aliceblue;
-  font-weight: 700;
-}
-#login:hover {
-  background-color: #24b164;
+#navbarNav {
+  font-size: 18px;
 }
 
-/* Sign Up button styling */
 
-.btn-signUp {
-  background-color: #24b164;
-  color: aliceblue;
-  font-weight: 700;
-}
-.btn-signUp:hover {
-  background-color: #16742e;
-  color: aliceblue;
-}
 .icon-link > .bi {
   width: 0.75em;
   height: 0.75em;
@@ -187,5 +171,56 @@ header {
   }
   .navbar-toggler{
     margin-right: 5px;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo {
+    width: 70px;
+    height: auto;
+  }
+  .img-d {
+    width: 50px;
+  }
+  #navbarNav {
+    font-size: 13px;
+    margin-left: 50px;
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+}
+@media (min-width: 1000px) {
+  #navbarNav {
+    font-size: 17px;
+    margin-left: 50px;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+  .img-d {
+    width: 120px;
+  }
+  #navbarNav {
+    font-size: 13px;
+    margin-right: 50px;
+  }
+  .car-text-mid {
+    font-size: 50px;
+  }
+  .car-text-left {
+    font-size: 50px;
+  }
+  .car-text {
+    font-size: 50px;
   }
 }
