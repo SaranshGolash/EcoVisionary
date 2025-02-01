@@ -1,7 +1,7 @@
 # Eco Visionary
 
 ## Description
-Eco Visionary is an innovative web application designed to promote environmental sustainability. The project leverages technologies such as Node.js, EJS, Bootstrap, HTML, CSS, and JavaScript to create an engaging user experience that raises awareness and encourages eco-friendly practices. Here users can sell, buy and manufacture creative artwork made using waste products generated fronm households, industries and many more sources.
+Eco Visionary is an innovative web application designed to promote environmental sustainability. The project leverages technologies such as Node.js, EJS, Bootstrap, HTML, CSS, and JavaScript to create an engaging user experience that raises awareness and encourages eco-friendly practices. Here users can sell, buy and manufacture creative artwork made using waste products generated from households, industries and many more sources.
 
 <img src="https://i.ibb.co/gMgKg84s/Screenshot-2025-02-01-185619.png" alt="Eco Visionary">
 
