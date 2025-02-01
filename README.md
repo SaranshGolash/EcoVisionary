@@ -32,8 +32,8 @@ Eco Visionary is an innovative web application designed to promote environmental
 Check out the live demo [here](https://ecovisionary.onrender.com).
 
 ## Collaborators
-- Your Name (Your GitHub Profile)
-- Collaborator Name (Collaborator's GitHub Profile)
+- Pranjeet Goswami (https://github.com/parasharr/)
+- Saransh Golash (Collaborator's GitHub Profile)
 
 ## Installation
 1. Clone the repository:
