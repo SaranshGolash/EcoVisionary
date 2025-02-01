@@ -33,7 +33,7 @@ Check out the live demo [here](https://ecovisionary.onrender.com).
 
 ## Collaborators
 - Pranjeet Goswami (https://github.com/parasharr/)
-- Saransh Golash (Collaborator's GitHub Profile)
+- Saransh Golash (https://github.com/SaranshGolash)
 
 ## Installation
 1. Clone the repository:
